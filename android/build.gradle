@@ -1,0 +1,33 @@
+buildscript {
+    ext {
+        // Other versions
+        mlkit_version = "16.0.0-beta6" // Ensure this matches the version you're adding
+    }
+    // repositories {
+    //     google()
+    //     mavenCentral()
+    // }
+    // dependencies {
+    //     // Other dependencies
+    //     classpath 'com.android.tools.build:gradle:4.2.1'
+    // }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
