@@ -45,7 +45,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
                             return (value != null)
                                 ? SizedBox(
                                     width: double.infinity,
-                                    height: height * 0.46,
+                                    height: height * 0.52,
                                     child: Column(
                                       children: [
                                         SingleChildScrollView(
@@ -54,11 +54,11 @@ class _PhotoScreenState extends State<PhotoScreen> {
                                             children: [
                                               SizedBox(
                                                 width: double.infinity,
-                                                height: height * 0.40,
+                                                height: height * 0.4,
                                               ),
                                               Image(
                                                 width: double.infinity,
-                                                height: height * 0.40,
+                                                height: height * 0.4,
                                                 image: FileImage(
                                                   File(value.path),
                                                 ),
@@ -147,7 +147,6 @@ class _PhotoScreenState extends State<PhotoScreen> {
                           Positioned(
                             left: 20,
                             child: Container(
-                           
                               height: getHeight(context, percent: 0.2),
                               decoration: BoxDecoration(
                                 image: DecorationImage(
@@ -158,7 +157,8 @@ class _PhotoScreenState extends State<PhotoScreen> {
                                 ),
                               ),
                               child: Padding(
-                                padding: const EdgeInsets.fromLTRB(24.0, 0, 24, 24),
+                                padding:
+                                    const EdgeInsets.fromLTRB(24.0, 0, 24, 24),
                                 child: Center(
                                   child: SizedBox(
                                     width: getWidth(context, percent: 0.6),
@@ -175,39 +175,13 @@ class _PhotoScreenState extends State<PhotoScreen> {
                               ),
                             ),
                           ),
-                          //  Stack(
-                          //    alignment: Alignment.center,
-                          //    children: [
-                          //      Positioned(
-                          //        left: 20,
-                          //        child: AppIcon(
-                          //          asset: IconProvider.bubble.buildImageUrl(),
-                          //          width: getWidth(context, percent: 0.65),
-                          //        ),
-                          //      ),
-                          //      Positioned(
-                          //        left: 40,
-                          //        child: SingleChildScrollView(
-                          //          padding: const EdgeInsets.only(
-                          //              bottom: 40, right: 20),
-                          //          child: SizedBox(
-                          //            width: getWidth(context, percent: 0.6),
-                          //            child: Text(
-                          //              value.isNotEmpty
-                          //                  ? value
-                          //                  : "Add a picture and I'll translate it.",
-                          //            ),
-                          //          ),
-                          //        ),
-                          //      ),
-                          //    ],
-                          //  ),
                           Positioned(
-                            right: -100,
-                            bottom: -120,
+                            right: -getWidth(context, percent: 0.2),
+                            bottom: -getWidth(context, percent: 0.1),
                             child: AppIcon(
                               asset: IconProvider.cleo.buildImageUrl(),
                               height: getHeight(context, percent: 0.6),
+                              
                             ),
                           ),
                         ],
@@ -217,7 +191,6 @@ class _PhotoScreenState extends State<PhotoScreen> {
                 ),
               ),
 
-              // --- Если идёт обработка, показываем полупрозрачную подложку и индикатор ---
               if (isProcessing) ...[
                 ModalBarrier(color: Colors.black45),
                 const Center(child: CircularProgressIndicator()),
@@ -249,7 +222,7 @@ class PhotoButton extends StatelessWidget {
         asset: source == ImageSource.camera
             ? IconProvider.photo.buildImageUrl()
             : IconProvider.gallery.buildImageUrl(),
-        width: isActive ? 96 : 48,
+        width: isActive ? 96 : 40,
       ),
     );
   }

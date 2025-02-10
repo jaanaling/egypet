@@ -23,13 +23,13 @@ dependencies:
   shared_preferences: ^2.3.1
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.0.17
- 
+  flutter_tesseract_ocr: ^0.4.28
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
 
-  flutter_tesseract_ocr: ^0.4.28
+  
 
 
 

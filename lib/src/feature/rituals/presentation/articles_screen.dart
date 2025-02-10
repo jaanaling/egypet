@@ -13,49 +13,59 @@ class ArticlesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<UserBloc, UserState>(
-      builder: (context, state) {
-        if (state is! UserLoaded) {
-          return const CupertinoActivityIndicator();
-        }
-        return ListView.separated(
-          itemCount: state.article.length,
-          padding: const EdgeInsets.symmetric(vertical: 16),
-          separatorBuilder: (
-            context,
-            index,
-          ) =>
-              const Gap(16),
-          itemBuilder: (context, index) {
-            final item = state.article[index];
-            return Stack(
-              alignment: Alignment.center,
-              children: [
-                AppIcon(asset: IconProvider.title.buildImageUrl()),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 48, vertical: 16),
-                  child: Text(
-                    '${item.title}',
-                    style: TextStyle(fontSize: 32),
-                  ),
-                ),
-                Positioned(
-                  bottom: 0,
-                  child: AnimatedButton(
-                      onPressed: () {
-                        context.push(
-                          '${RouteValue.articles.path}/${RouteValue.article.path}',
-                          extra: item,
-                        );
-                      },
-                      child: AppIcon(asset: IconProvider.read.buildImageUrl())),
-                ),
-              ],
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+      child: SafeArea(
+        right: false,
+        left: false,
+        bottom: false,
+        child: BlocBuilder<UserBloc, UserState>(
+          builder: (context, state) {
+            if (state is! UserLoaded) {
+              return const CupertinoActivityIndicator();
+            }
+            return ListView.separated(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: state.article.length,
+              separatorBuilder: (
+                context,
+                index,
+              ) =>
+                  const Gap(16),
+              itemBuilder: (context, index) {
+                final item = state.article[index];
+                return Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    AppIcon(asset: IconProvider.title.buildImageUrl()),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 48, vertical: 16),
+                      child: Text(
+                        '${item.title}',
+                        style: TextStyle(fontSize: 32),
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 0,
+                      child: AnimatedButton(
+                          onPressed: () {
+                            context.push(
+                              '${RouteValue.articles.path}/${RouteValue.article.path}',
+                              extra: item,
+                            );
+                          },
+                          child: AppIcon(
+                              asset: IconProvider.read.buildImageUrl())),
+                    ),
+                  ],
+                );
+              },
             );
           },
-        );
-      },
+        ),
+      ),
     );
   }
 }

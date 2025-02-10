@@ -1,6 +1,10 @@
+import 'package:egypet_trip/src/core/utils/app_icon.dart';
+import 'package:egypet_trip/src/core/utils/icon_provider.dart';
 import 'package:egypet_trip/src/feature/rituals/utils/dialog_processor.dart';
+import 'package:egypet_trip/ui_kit/animated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:translator/translator.dart';
 
 class DialogScreen extends StatefulWidget {
   const DialogScreen({super.key});
@@ -49,6 +53,7 @@ class _DialogScreenState extends State<DialogScreen> {
               child: Column(
                 children: [
                   Expanded(
+                    flex: 3,
                     child: ValueListenableBuilder<bool>(
                       valueListenable: dialogProcessor.notifierDialog,
                       builder: (context, value, child) {
@@ -114,33 +119,52 @@ class _DialogScreenState extends State<DialogScreen> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 25,
-                      vertical: 16,
+                      horizontal: 4,
+                      vertical: 8,
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        MicrophoneButton(
-                          isEnglish: true,
-                          onListen: () {
-                            dialogProcessor.startListening('en-US');
-                            isEnglish = true;
-                          },
-                          onStopListen: () async {
-                            await stopListen();
-                          },
-                        ),
-                        MicrophoneButton(
-                          isEnglish: false,
-                          onListen: () {
-                            dialogProcessor.startListening('ar-EG');
-                            isEnglish = false;
-                          },
-                          onStopListen: () async {
-                            await stopListen();
-                          },
-                        ),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 44),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        
+                        children: [
+                        
+                          MicrophoneButton(
+                            isEnglish: true,
+                            onListen: () {
+                              dialogProcessor.startListening('en-US');
+                              isEnglish = true;
+                            },
+                            onStopListen: () async {
+                              await stopListen();
+                            },
+                          ),
+                          Row(crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              MicrophoneButton(
+                                isEnglish: false,
+                                onListen: () {
+                                  dialogProcessor.startListening('ar-EG');
+                                  isEnglish = false;
+                                },
+                                onStopListen: () async {
+                                  await stopListen();
+                                },
+                              ),
+                                         Gap(8),            
+                              AnimatedButton(
+                                onPressed: () => setState(() {
+                                  dialogProcessor.messages.clear();
+                                }),
+                                child: AppIcon(
+                                  width: 36,
+                                  asset: IconProvider.clear.buildImageUrl(),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -173,6 +197,7 @@ class _MicrophoneButtonState extends State<MicrophoneButton>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
+  bool isActive = false;
 
   @override
   void initState() {
@@ -199,11 +224,17 @@ class _MicrophoneButtonState extends State<MicrophoneButton>
   void _onPanStart(DragStartDetails details) {
     _controller.forward();
     widget.onListen();
+    setState(() {
+      isActive = true;
+    });
   }
 
   void _onPanEnd(DragEndDetails details) {
     _controller.reverse();
     widget.onStopListen();
+    setState(() {
+      isActive = false;
+    });
   }
 
   @override
@@ -217,17 +248,20 @@ class _MicrophoneButtonState extends State<MicrophoneButton>
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              padding: const EdgeInsets.only(
-                left: 15,
-                right: 16,
-                top: 17,
-                bottom: 14,
-              ),
               decoration: BoxDecoration(
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                Icons.mic,
+                  shape: BoxShape.circle,
+                  color: isActive
+                      ? Colors.black.withOpacity(0.7)
+                      : Colors.transparent,
+                  border: isActive
+                      ? Border.all(color: const Color(0xFF2EB200))
+                      : null),
+              child: AppIcon(
+                blendMode: BlendMode.srcATop,
+                color: isActive ? Colors.black.withOpacity(0.7) : null,
+                asset: widget.isEnglish
+                    ? IconProvider.d1.buildImageUrl()
+                    : IconProvider.d2.buildImageUrl(),
               ),
             ),
             const Gap(7),
@@ -235,19 +269,15 @@ class _MicrophoneButtonState extends State<MicrophoneButton>
               padding:
                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 2,
-                    blurRadius: 5,
-                    offset: const Offset(0, 3),
-                  ),
-                ],
-                borderRadius: BorderRadius.circular(16),
-              ),
+                  color: const Color(0xFFBA5B04),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.white)),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 2, horizontal: 24),
+                child: Text(
+                  !widget.isEnglish ? 'Masr' : 'English',
+                ),
               ),
             ),
           ],
@@ -257,16 +287,44 @@ class _MicrophoneButtonState extends State<MicrophoneButton>
   }
 }
 
-class ChatBubble extends StatelessWidget {
+class ChatBubble extends StatefulWidget {
   final bool isEnglish;
   final void Function() onListen;
   final String text;
-  const ChatBubble({
+  ChatBubble({
     super.key,
     required this.isEnglish,
     required this.onListen,
     required this.text,
   });
+
+  @override
+  State<ChatBubble> createState() => _ChatBubbleState();
+}
+
+class _ChatBubbleState extends State<ChatBubble> {
+  final _translator = GoogleTranslator();
+
+  String translatedText = '';
+
+  Future<void> translateText(String text, String from, String to) async {
+    final translation = await _translator.translate(
+      text,
+      from: from,
+      to: to,
+    );
+    setState(() {
+      translatedText = translation.text;
+    });
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    translateText(widget.text, widget.isEnglish ? 'en' : 'ar',
+        widget.isEnglish ? 'ar' : 'en');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -276,25 +334,35 @@ class ChatBubble extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        if (isEnglish)
-          IconButton(
-            onPressed: onListen,
-            icon: Icon(
+        if (!widget.isEnglish)
+          AppIcon(
+            asset: IconProvider.d1.buildImageUrl(),
+            width: width * 0.2,
+          ),
+        if (widget.isEnglish)
+          AnimatedButton(
+            onPressed: () => widget.onListen(),
+            child: Icon(
               Icons.volume_up,
             ),
           ),
+        Gap(4),
         Container(
           constraints: BoxConstraints(
             maxWidth: width * 0.35,
           ),
           decoration: BoxDecoration(
+            color:
+                widget.isEnglish ? const Color(0xFFBA5B04) : Color(0xFFF69100),
             borderRadius: BorderRadius.only(
               topLeft: bubbleBorderRadius,
               topRight: bubbleBorderRadius,
-              bottomLeft:
-                  !isEnglish ? const Radius.circular(3) : bubbleBorderRadius,
-              bottomRight:
-                  !isEnglish ? bubbleBorderRadius : const Radius.circular(3),
+              bottomLeft: !widget.isEnglish
+                  ? const Radius.circular(3)
+                  : bubbleBorderRadius,
+              bottomRight: !widget.isEnglish
+                  ? bubbleBorderRadius
+                  : const Radius.circular(3),
             ),
           ),
           child: Padding(
@@ -305,15 +373,21 @@ class ChatBubble extends StatelessWidget {
               right: 14,
             ),
             child: Text(
-              textAlign: !isEnglish ? TextAlign.left : TextAlign.right,
-              text,
+              textAlign: TextAlign.right,
+              "${widget.text}\n$translatedText",
             ),
           ),
         ),
-        if (!isEnglish)
-          IconButton(
-            onPressed: onListen,
-            icon: Icon(
+        Gap(4),
+        if (widget.isEnglish)
+          AppIcon(
+            asset: IconProvider.d2.buildImageUrl(),
+            width: width * 0.2,
+          ),
+        if (!widget.isEnglish)
+          AnimatedButton(
+            onPressed: () => widget.onListen(),
+            child: Icon(
               Icons.volume_up,
             ),
           ),
@@ -366,6 +440,7 @@ class _ChatBubleAnimationState extends State<ChatBubleAnimation>
         maxWidth: width * 0.35,
       ),
       decoration: BoxDecoration(
+        color: Colors.white,
         borderRadius: BorderRadius.only(
           topLeft: bubbleBorderRadius,
           topRight: bubbleBorderRadius,

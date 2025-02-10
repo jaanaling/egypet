@@ -7,7 +7,6 @@ import 'package:flutter_tesseract_ocr/flutter_tesseract_ocr.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:translator/translator.dart';
 
-
 class PhotoProcessor {
   final ValueNotifier<String> notifierText = ValueNotifier<String>('');
   final ValueNotifier<XFile?> notifierPickedFile = ValueNotifier<XFile?>(null);
@@ -39,7 +38,7 @@ class PhotoProcessor {
         translatedText = translation.text;
         notifierText.value = translatedText;
       } else {
-        notifierText.value = 'Arabic text not found.';
+        notifierText.value = 'Masr text not found.';
       }
     } catch (e) {
       logger.e('Error processing image: $e');
