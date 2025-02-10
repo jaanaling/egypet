@@ -2,14 +2,15 @@
 import 'dart:convert';
 
 class Article {
+
   final String title;
   final String content;
-  final bool? isFavorite; 
+
 
   Article({
     required this.title,
     required this.content,
-    this.isFavorite = false,
+ 
   });
 
   Article copyWith({
@@ -20,7 +21,7 @@ class Article {
     return Article(
       title: title ?? this.title,
       content: content ?? this.content,
-      isFavorite: isFavorite ?? this.isFavorite,
+    
     );
   }
 
@@ -28,7 +29,7 @@ class Article {
     return <String, dynamic>{
       'title': title,
       'content': content,
-      'isFavorite': isFavorite,
+   
     };
   }
 
@@ -36,7 +37,7 @@ class Article {
     return Article(
       title: map['title'] as String,
       content: map['content'] as String,
-      isFavorite: map['isFavorite'] != null ? map['isFavorite'] as bool : null,
+   
     );
   }
 
@@ -45,7 +46,7 @@ class Article {
   factory Article.fromJson(String source) => Article.fromMap(json.decode(source) as Map<String, dynamic>);
 
   @override
-  String toString() => 'Article(title: $title, content: $content, isFavorite: $isFavorite)';
+  String toString() => 'Article(title: $title, content: $content)';
 
   @override
   bool operator ==(covariant Article other) {
@@ -53,10 +54,10 @@ class Article {
   
     return 
       other.title == title &&
-      other.content == content &&
-      other.isFavorite == isFavorite;
+      other.content == content ;
+   
   }
 
   @override
-  int get hashCode => title.hashCode ^ content.hashCode ^ isFavorite.hashCode;
+  int get hashCode => title.hashCode ^ content.hashCode ;
 }

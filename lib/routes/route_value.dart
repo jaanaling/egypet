@@ -1,24 +1,33 @@
 enum RouteValue {
   splash(
     path: '/',
+   
   ),
-  home(
-    path: '/home',
+  photo(
+    path: '/photo',
+   
   ),
-  select(
-    path: 'select',
+  dialog(
+    path: '/dialog',
+  
   ),
-  game(
-    path: 'game',
-  ),
-  achievement(
-    path: 'achievement',
+  dictionary(
+    path: '/dictionary',
+   
   ),
 
-  privacy(path: '/privacy'),
+  articles(
+    path: '/articles',
+    
+  ),
+  article(
+    path: 'article',
+  
+  ),
 
   unknown(
     path: '',
+ 
   );
 
   final String path;

@@ -13,28 +13,11 @@ class UserBloc extends Bloc<UserEvent, UserState> {
 
   UserBloc() : super(const UserLoading()) {
     on<UserLoadData>(_onUserLoadData);
-    on<ArticleSwitchFavorite>(_onArticleSwitchFavorite);
+
     on<DictionarySwitchFavorite>(_onDictionarySwitchFavorite);
   }
 
-  Future<void> _onArticleSwitchFavorite(
-    ArticleSwitchFavorite event,
-    Emitter<UserState> emit,
-  ) async {
-    final currentState = state;
-    if (currentState is UserLoaded) {
-      final updatedArticle =
-          event.item.copyWith(isFavorite: !event.item.isFavorite!);
-      await userRepository.updateArticle(updatedArticle);
-      emit(
-        currentState.copyWith(
-          article: currentState.article
-              .map((e) => e == event.item ? updatedArticle : e)
-              .toList(),
-        ),
-      );
-    }
-  }
+
 
   Future<void> _onDictionarySwitchFavorite(
     DictionarySwitchFavorite event,

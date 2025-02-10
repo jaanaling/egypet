@@ -1,0 +1,3003 @@
+[
+    {
+      "id": 1,
+      "english": "Hello",
+      "egypet": "Marhaba (مرحباً)",
+      "isFavorite": false
+    },
+    {
+      "id": 2,
+      "english": "Hi",
+      "egypet": "Salam (سلام)",
+      "isFavorite": false
+    },
+    {
+      "id": 3,
+      "english": "Welcome",
+      "egypet": "Ahlan wa sahlan (أهلاً وسهلاً)",
+      "isFavorite": false
+    },
+    {
+      "id": 4,
+      "english": "Good morning",
+      "egypet": "Sabah el-khair (صباح الخير)",
+      "isFavorite": false
+    },
+    {
+      "id": 5,
+      "english": "Good morning (response)",
+      "egypet": "Sabah el-nur (صباح النور)",
+      "isFavorite": false
+    },
+    {
+      "id": 6,
+      "english": "Good evening",
+      "egypet": "Masa' el-khair (مساء الخير)",
+      "isFavorite": false
+    },
+    {
+      "id": 7,
+      "english": "Good evening (response)",
+      "egypet": "Masa' el-nur (مساء النور)",
+      "isFavorite": false
+    },
+    {
+      "id": 8,
+      "english": "Peace be upon you",
+      "egypet": "As-salamu alaykum (السلام عليكم)",
+      "isFavorite": false
+    },
+    {
+      "id": 9,
+      "english": "Upon you be peace (response)",
+      "egypet": "Wa alaykum as-salam (وعليكم السلام)",
+      "isFavorite": false
+    },
+    {
+      "id": 10,
+      "english": "How are you? (m)",
+      "egypet": "Izayyak? (إزّيك؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 11,
+      "english": "How are you? (f)",
+      "egypet": "Izayyik? (إزّيكِ؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 12,
+      "english": "I'm fine",
+      "egypet": "Ana kwayyis (أنا كويس)",
+      "isFavorite": false
+    },
+    {
+      "id": 13,
+      "english": "What's your name? (m/f)",
+      "egypet": "Ismak eh? (اسمك إيه؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 14,
+      "english": "My name is...",
+      "egypet": "Ana ismi... (أنا اسمي...)",
+      "isFavorite": false
+    },
+    {
+      "id": 15,
+      "english": "Nice to meet you",
+      "egypet": "Forsa sa'ida (فرصة سعيدة)",
+      "isFavorite": false
+    },
+    {
+      "id": 16,
+      "english": "Thank you",
+      "egypet": "Shukran (شكراً)",
+      "isFavorite": false
+    },
+    {
+      "id": 17,
+      "english": "You're welcome",
+      "egypet": "Afwan (عفواً)",
+      "isFavorite": false
+    },
+    {
+      "id": 18,
+      "english": "Please (m)",
+      "egypet": "Min fadlak (من فضلك)",
+      "isFavorite": false
+    },
+    {
+      "id": 19,
+      "english": "Please (f)",
+      "egypet": "Min fadlik (من فضلكِ)",
+      "isFavorite": false
+    },
+    {
+      "id": 20,
+      "english": "Sorry",
+      "egypet": "Asif (آسف) / Asfa (آسفة)",
+      "isFavorite": false
+    },
+    {
+      "id": 21,
+      "english": "Excuse me (getting attention)",
+      "egypet": "Law samaht (لو سمحت)",
+      "isFavorite": false
+    },
+    {
+      "id": 22,
+      "english": "Excuse me (apology)",
+      "egypet": "Ma'alesh (معلش)",
+      "isFavorite": false
+    },
+    {
+      "id": 23,
+      "english": "Yes",
+      "egypet": "Aywa (أيوة)",
+      "isFavorite": false
+    },
+    {
+      "id": 24,
+      "english": "No",
+      "egypet": "La' (لأ)",
+      "isFavorite": false
+    },
+    {
+      "id": 25,
+      "english": "Maybe",
+      "egypet": "Momken (ممكن)",
+      "isFavorite": false
+    },
+    {
+      "id": 26,
+      "english": "Of course",
+      "egypet": "Tab'an (طبعاً)",
+      "isFavorite": false
+    },
+    {
+      "id": 27,
+      "english": "Really?",
+      "egypet": "Begad? (بجد؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 28,
+      "english": "No problem",
+      "egypet": "Mafeesh mushkila (مفيش مشكلة)",
+      "isFavorite": false
+    },
+    {
+      "id": 29,
+      "english": "I don't understand",
+      "egypet": "Mesh fahim (مش فاهم) / Mesh fahma (مش فاهمة)",
+      "isFavorite": false
+    },
+    {
+      "id": 30,
+      "english": "I understand",
+      "egypet": "Fahim (فاهم) / Fahma (فاهمة)",
+      "isFavorite": false
+    },
+    {
+      "id": 31,
+      "english": "Goodbye",
+      "egypet": "Ma'a salama (مع السلامة)",
+      "isFavorite": false
+    },
+    {
+      "id": 32,
+      "english": "See you later",
+      "egypet": "Ashufak ba'deen (أشوفك بعدين)",
+      "isFavorite": false
+    },
+    {
+      "id": 33,
+      "english": "Good night",
+      "egypet": "Tisbah ala khair (تصبح على خير)",
+      "isFavorite": false
+    },
+    {
+      "id": 34,
+      "english": "Good night (response)",
+      "egypet": "Wenta min ahlo (وانت من أهله)",
+      "isFavorite": false
+    },
+    {
+      "id": 35,
+      "english": "Congratulations",
+      "egypet": "Mabrouk (مبروك)",
+      "isFavorite": false
+    },
+    {
+      "id": 36,
+      "english": "What's up?",
+      "egypet": "Akhabarak eh? (أخبارك إيه؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 37,
+      "english": "Nothing new",
+      "egypet": "Ma feesh gedid (مفيش جديد)",
+      "isFavorite": false
+    },
+    {
+      "id": 38,
+      "english": "Where are you from?",
+      "egypet": "Enta men fein? (إنت من فين؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 39,
+      "english": "I'm from...",
+      "egypet": "Ana men... (أنا من...)",
+      "isFavorite": false
+    },
+    {
+      "id": 40,
+      "english": "Welcome again",
+      "egypet": "Ahlan beek (m) / Ahlan beeki (f) (أهلاً بيك / أهلاً بيكي)",
+      "isFavorite": false
+    },
+    {
+      "id": 41,
+      "english": "Take care",
+      "egypet": "Khali balak (خلي بالك)",
+      "isFavorite": false
+    },
+    {
+      "id": 42,
+      "english": "I love Egypt",
+      "egypet": "Ana baheb Masr (أنا بحب مصر)",
+      "isFavorite": false
+    },
+    {
+      "id": 43,
+      "english": "Do you speak English?",
+      "egypet": "Betetkallem Engleezy? (بتتكلم إنجليزي؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 44,
+      "english": "I speak a little Arabic",
+      "egypet": "Batkallem Araby shwayya (بتكلم عربي شوية)",
+      "isFavorite": false
+    },
+    {
+      "id": 45,
+      "english": "Help!",
+      "egypet": "El-ha'ooni! (الحقوني!)",
+      "isFavorite": false
+    },
+    {
+      "id": 46,
+      "english": "Stop!",
+      "egypet": "Kefaya! (كفاية!)",
+      "isFavorite": false
+    },
+    {
+      "id": 47,
+      "english": "Watch out!",
+      "egypet": "Khali balak! (خلي بالك!)",
+      "isFavorite": false
+    },
+    {
+      "id": 48,
+      "english": "Be careful",
+      "egypet": "Khalik hather (خليك حذر)",
+      "isFavorite": false
+    },
+    {
+      "id": 49,
+      "english": "Cheers",
+      "egypet": "Fee sihetak (في صحتك)",
+      "isFavorite": false
+    },
+    {
+      "id": 50,
+      "english": "Bon appetit",
+      "egypet": "Bel hana we shifa (بالهنا والشفا)",
+      "isFavorite": false
+    },
+    {
+      "id": 51,
+      "english": "God willing",
+      "egypet": "Insha'Allah (إن شاء الله)",
+      "isFavorite": false
+    },
+    {
+      "id": 52,
+      "english": "Thank God",
+      "egypet": "El-hamdulillah (الحمد لله)",
+      "isFavorite": false
+    },
+    {
+      "id": 53,
+      "english": "That's enough",
+      "egypet": "Kefaya keda (كفاية كده)",
+      "isFavorite": false
+    },
+    {
+      "id": 54,
+      "english": "Come here",
+      "egypet": "Ta'ala (m) / Ta'ali (f) (تعالى / تعالي)",
+      "isFavorite": false
+    },
+    {
+      "id": 55,
+      "english": "Go away",
+      "egypet": "Imshi (امشي)",
+      "isFavorite": false
+    },
+    {
+      "id": 56,
+      "english": "Wait",
+      "egypet": "Istanna (m) / Istanni (f) (استنى / استني)",
+      "isFavorite": false
+    },
+    {
+      "id": 57,
+      "english": "One moment",
+      "egypet": "Lahza wahda (لحظة واحدة)",
+      "isFavorite": false
+    },
+    {
+      "id": 58,
+      "english": "Hurry up",
+      "egypet": "Besor'a (بسرعة)",
+      "isFavorite": false
+    },
+    {
+      "id": 59,
+      "english": "Don't worry",
+      "egypet": "Matla'ash (ما تقلقش) / Matla'eesh (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 60,
+      "english": "I miss you (m)",
+      "egypet": "Wahashteni (وحشتني)",
+      "isFavorite": false
+    },
+    {
+      "id": 61,
+      "english": "I miss you (f)",
+      "egypet": "Wahashtini (وحشتيني)",
+      "isFavorite": false
+    },
+    {
+      "id": 62,
+      "english": "I'm hungry",
+      "egypet": "Ana ga'an (أنا جعان) / ga'ana (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 63,
+      "english": "I'm thirsty",
+      "egypet": "Ana atshan (أنا عطشان) / atshana (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 64,
+      "english": "I'm tired",
+      "egypet": "Ana ta'ban (أنا تعبان) / ta'bana (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 65,
+      "english": "I like it",
+      "egypet": "Aagabni (عجبني)",
+      "isFavorite": false
+    },
+    {
+      "id": 66,
+      "english": "I don't like it",
+      "egypet": "Mesh aagabni (مش عجبني)",
+      "isFavorite": false
+    },
+    {
+      "id": 67,
+      "english": "I'm lost",
+      "egypet": "Ana tayeh (أنا تايه) / tayha (تايهة)",
+      "isFavorite": false
+    },
+    {
+      "id": 68,
+      "english": "Where is the bathroom?",
+      "egypet": "Fein el-hammam? (فين الحمام؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 69,
+      "english": "Where is...?",
+      "egypet": "Fein...? (فين...؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 70,
+      "english": "Right here",
+      "egypet": "Hena exactly (هنا بالظبط)",
+      "isFavorite": false
+    },
+    {
+      "id": 71,
+      "english": "Over there",
+      "egypet": "Hnak (هناك)",
+      "isFavorite": false
+    },
+    {
+      "id": 72,
+      "english": "Turn right",
+      "egypet": "Khosh yemeen (خش يمين)",
+      "isFavorite": false
+    },
+    {
+      "id": 73,
+      "english": "Turn left",
+      "egypet": "Khosh shmal (خش شمال)",
+      "isFavorite": false
+    },
+    {
+      "id": 74,
+      "english": "Straight ahead",
+      "egypet": "Ala tool (على طول)",
+      "isFavorite": false
+    },
+    {
+      "id": 75,
+      "english": "Near",
+      "egypet": "Orayyib (قريب)",
+      "isFavorite": false
+    },
+    {
+      "id": 76,
+      "english": "Far",
+      "egypet": "Baeed (بعيد)",
+      "isFavorite": false
+    },
+    {
+      "id": 77,
+      "english": "Taxi",
+      "egypet": "Taxi (تاكسي)",
+      "isFavorite": false
+    },
+    {
+      "id": 78,
+      "english": "Bus",
+      "egypet": "Otobis (أوتوبيس)",
+      "isFavorite": false
+    },
+    {
+      "id": 79,
+      "english": "Train",
+      "egypet": "Qitar (قطر)",
+      "isFavorite": false
+    },
+    {
+      "id": 80,
+      "english": "Metro",
+      "egypet": "Metro (مترو)",
+      "isFavorite": false
+    },
+    {
+      "id": 81,
+      "english": "Airport",
+      "egypet": "Matar (مطار)",
+      "isFavorite": false
+    },
+    {
+      "id": 82,
+      "english": "Station",
+      "egypet": "Mahatta (محطة)",
+      "isFavorite": false
+    },
+    {
+      "id": 83,
+      "english": "Exit",
+      "egypet": "Khoroog (خروج)",
+      "isFavorite": false
+    },
+    {
+      "id": 84,
+      "english": "Entrance",
+      "egypet": "Dukhool (دخول)",
+      "isFavorite": false
+    },
+    {
+      "id": 85,
+      "english": "Ticket",
+      "egypet": "Tazkara (تذكرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 86,
+      "english": "Passport",
+      "egypet": "Basboor (باسبور)",
+      "isFavorite": false
+    },
+    {
+      "id": 87,
+      "english": "Police",
+      "egypet": "Bolis (بوليس)",
+      "isFavorite": false
+    },
+    {
+      "id": 88,
+      "english": "Hospital",
+      "egypet": "Mostashfa (مستشفى)",
+      "isFavorite": false
+    },
+    {
+      "id": 89,
+      "english": "Pharmacy",
+      "egypet": "Saydaleya (صيدلية)",
+      "isFavorite": false
+    },
+    {
+      "id": 90,
+      "english": "Ambulance",
+      "egypet": "Ambulans / Is'af (إسعاف)",
+      "isFavorite": false
+    },
+    {
+      "id": 91,
+      "english": "Doctor",
+      "egypet": "Doktor (دكتور)",
+      "isFavorite": false
+    },
+    {
+      "id": 92,
+      "english": "Medicine",
+      "egypet": "Dawa (دواء)",
+      "isFavorite": false
+    },
+    {
+      "id": 93,
+      "english": "I feel sick",
+      "egypet": "Ana 'ayan (أنا عيان) / 'ayana (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 94,
+      "english": "Help me",
+      "egypet": "Sa'edni (ساعدني) / Sa'edini (ساعديني)",
+      "isFavorite": false
+    },
+    {
+      "id": 95,
+      "english": "Fire!",
+      "egypet": "Hareeq! (حريق!)",
+      "isFavorite": false
+    },
+    {
+      "id": 96,
+      "english": "Call the police",
+      "egypet": "Itlob el-bolis (اطلب البوليس)",
+      "isFavorite": false
+    },
+    {
+      "id": 97,
+      "english": "Stop here",
+      "egypet": "Wa'af hena (وقف هنا)",
+      "isFavorite": false
+    },
+    {
+      "id": 98,
+      "english": "How much is this?",
+      "egypet": "Bikam da? (بكام ده؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 99,
+      "english": "Too expensive",
+      "egypet": "Ghali awi (غالي قوي)",
+      "isFavorite": false
+    },
+    {
+      "id": 100,
+      "english": "I need a discount",
+      "egypet": "Ayez takhfid (عايز تخفيض) / Ayza takhfid (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 101,
+      "english": "Give me a good price",
+      "egypet": "Edeeni se'r helw (اديني سعر حلو)",
+      "isFavorite": false
+    },
+    {
+      "id": 102,
+      "english": "Money",
+      "egypet": "Flous (فلوس)",
+      "isFavorite": false
+    },
+    {
+      "id": 103,
+      "english": "Change",
+      "egypet": "Fakka (فكة)",
+      "isFavorite": false
+    },
+    {
+      "id": 104,
+      "english": "Receipt",
+      "egypet": "Eesal (إيصال)",
+      "isFavorite": false
+    },
+    {
+      "id": 105,
+      "english": "Where can I pay?",
+      "egypet": "Adef fein? (أدفع فين؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 106,
+      "english": "Delicious",
+      "egypet": "Lazeed (لذيذ)",
+      "isFavorite": false
+    },
+    {
+      "id": 107,
+      "english": "I want water",
+      "egypet": "Ana ayez maya (أنا عايز مية) / ayza maya (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 108,
+      "english": "Bread",
+      "egypet": "Aish (عيش)",
+      "isFavorite": false
+    },
+    {
+      "id": 109,
+      "english": "Meat",
+      "egypet": "Lahma (لحمة)",
+      "isFavorite": false
+    },
+    {
+      "id": 110,
+      "english": "Chicken",
+      "egypet": "Ferekh (فراخ)",
+      "isFavorite": false
+    },
+    {
+      "id": 111,
+      "english": "Fish",
+      "egypet": "Samak (سمك)",
+      "isFavorite": false
+    },
+    {
+      "id": 112,
+      "english": "Vegetables",
+      "egypet": "Khodar (خضار)",
+      "isFavorite": false
+    },
+    {
+      "id": 113,
+      "english": "Fruits",
+      "egypet": "Fawakih (فواكه)",
+      "isFavorite": false
+    },
+    {
+      "id": 114,
+      "english": "Rice",
+      "egypet": "Ruzz (رز)",
+      "isFavorite": false
+    },
+    {
+      "id": 115,
+      "english": "Beans",
+      "egypet": "Foul (فول)",
+      "isFavorite": false
+    },
+    {
+      "id": 116,
+      "english": "Lentils",
+      "egypet": "Ads (عدس)",
+      "isFavorite": false
+    },
+    {
+      "id": 117,
+      "english": "Salt",
+      "egypet": "Melh (ملح)",
+      "isFavorite": false
+    },
+    {
+      "id": 118,
+      "english": "Sugar",
+      "egypet": "Sokkar (سكر)",
+      "isFavorite": false
+    },
+    {
+      "id": 119,
+      "english": "Spicy",
+      "egypet": "Harr (حار)",
+      "isFavorite": false
+    },
+    {
+      "id": 120,
+      "english": "Not spicy",
+      "egypet": "Mesh harr (مش حار)",
+      "isFavorite": false
+    },
+    {
+      "id": 121,
+      "english": "Tea",
+      "egypet": "Shay (شاي)",
+      "isFavorite": false
+    },
+    {
+      "id": 122,
+      "english": "Coffee",
+      "egypet": "Ahwa (قهوة)",
+      "isFavorite": false
+    },
+    {
+      "id": 123,
+      "english": "Milk",
+      "egypet": "Laban (لبن)",
+      "isFavorite": false
+    },
+    {
+      "id": 124,
+      "english": "Juice",
+      "egypet": "Aseer (عصير)",
+      "isFavorite": false
+    },
+    {
+      "id": 125,
+      "english": "Beer",
+      "egypet": "Bira (بيرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 126,
+      "english": "Wine",
+      "egypet": "Nebeet (نبيت)",
+      "isFavorite": false
+    },
+    {
+      "id": 127,
+      "english": "Check, please",
+      "egypet": "El-hisab, min fadlak (الحساب من فضلك)",
+      "isFavorite": false
+    },
+    {
+      "id": 128,
+      "english": "I'm full",
+      "egypet": "Ana shaba'an (أنا شبعان) / shab'ana (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 129,
+      "english": "Waiter",
+      "egypet": "Garsoun (جرسون)",
+      "isFavorite": false
+    },
+    {
+      "id": 130,
+      "english": "Waitress",
+      "egypet": "Garsouna (جرسونة)",
+      "isFavorite": false
+    },
+    {
+      "id": 131,
+      "english": "Delicious meal",
+      "egypet": "Wagba lazeeza (وجبة لذيذة)",
+      "isFavorite": false
+    },
+    {
+      "id": 132,
+      "english": "No onions",
+      "egypet": "Bidoon basal (بدون بصل)",
+      "isFavorite": false
+    },
+    {
+      "id": 133,
+      "english": "Check-in",
+      "egypet": "Tasgeel dokhool (تسجيل دخول)",
+      "isFavorite": false
+    },
+    {
+      "id": 134,
+      "english": "Check-out",
+      "egypet": "Tasgeel khoroog (تسجيل خروج)",
+      "isFavorite": false
+    },
+    {
+      "id": 135,
+      "english": "Reservation",
+      "egypet": "Hagz (حجز)",
+      "isFavorite": false
+    },
+    {
+      "id": 136,
+      "english": "Room",
+      "egypet": "Ghorfa (غرفة)",
+      "isFavorite": false
+    },
+    {
+      "id": 137,
+      "english": "Key",
+      "egypet": "Meftah (مفتاح)",
+      "isFavorite": false
+    },
+    {
+      "id": 138,
+      "english": "Bed",
+      "egypet": "Sareer (سرير)",
+      "isFavorite": false
+    },
+    {
+      "id": 139,
+      "english": "Blanket",
+      "egypet": "Battaniya (بطانية)",
+      "isFavorite": false
+    },
+    {
+      "id": 140,
+      "english": "Air conditioner",
+      "egypet": "Takyeef (تكييف)",
+      "isFavorite": false
+    },
+    {
+      "id": 141,
+      "english": "Towel",
+      "egypet": "Fouta (فوطة)",
+      "isFavorite": false
+    },
+    {
+      "id": 142,
+      "english": "Soap",
+      "egypet": "Saboon (صابون)",
+      "isFavorite": false
+    },
+    {
+      "id": 143,
+      "english": "Shampoo",
+      "egypet": "Shambو (شامبو)",
+      "isFavorite": false
+    },
+    {
+      "id": 144,
+      "english": "Toilet paper",
+      "egypet": "Wara' hammam (ورق حمام)",
+      "isFavorite": false
+    },
+    {
+      "id": 145,
+      "english": "Hot water",
+      "egypet": "Maya sokhna (مية سخنة)",
+      "isFavorite": false
+    },
+    {
+      "id": 146,
+      "english": "Cold water",
+      "egypet": "Maya sa'a (مية ساقعة)",
+      "isFavorite": false
+    },
+    {
+      "id": 147,
+      "english": "Clean",
+      "egypet": "Nedeef (نظيف)",
+      "isFavorite": false
+    },
+    {
+      "id": 148,
+      "english": "Dirty",
+      "egypet": "Wesekh (وسخ)",
+      "isFavorite": false
+    },
+    {
+      "id": 149,
+      "english": "I like this hotel",
+      "egypet": "Aagabni el-fondoq da (عجبني الفندق ده)",
+      "isFavorite": false
+    },
+    {
+      "id": 150,
+      "english": "I don't like this place",
+      "egypet": "Mish aagabni el-makan da (مش عجبني المكان ده)",
+      "isFavorite": false
+    },
+    {
+      "id": 151,
+      "english": "I'm here for business",
+      "egypet": "Ana hena lel shughl (أنا هنا للشغل)",
+      "isFavorite": false
+    },
+    {
+      "id": 152,
+      "english": "I'm here for tourism",
+      "egypet": "Ana hena lel siyaha (أنا هنا للسياحة)",
+      "isFavorite": false
+    },
+    {
+      "id": 153,
+      "english": "Vacation",
+      "egypet": "Agaza (أجازة)",
+      "isFavorite": false
+    },
+    {
+      "id": 154,
+      "english": "Beach",
+      "egypet": "Shat' (شاطئ)",
+      "isFavorite": false
+    },
+    {
+      "id": 155,
+      "english": "Sun",
+      "egypet": "Shams (شمس)",
+      "isFavorite": false
+    },
+    {
+      "id": 156,
+      "english": "Shade",
+      "egypet": "Dell (ظل)",
+      "isFavorite": false
+    },
+    {
+      "id": 157,
+      "english": "Swimming",
+      "egypet": "Sibaha (سباحة)",
+      "isFavorite": false
+    },
+    {
+      "id": 158,
+      "english": "Pool",
+      "egypet": "Hamam sibaha (حمام سباحة)",
+      "isFavorite": false
+    },
+    {
+      "id": 159,
+      "english": "Sand",
+      "egypet": "Ramla (رملة)",
+      "isFavorite": false
+    },
+    {
+      "id": 160,
+      "english": "Sea",
+      "egypet": "Bahr (بحر)",
+      "isFavorite": false
+    },
+    {
+      "id": 161,
+      "english": "River",
+      "egypet": "Nahr (نهر)",
+      "isFavorite": false
+    },
+    {
+      "id": 162,
+      "english": "Nile",
+      "egypet": "El-Nil (النيل)",
+      "isFavorite": false
+    },
+    {
+      "id": 163,
+      "english": "Ship",
+      "egypet": "Safina (سفينة)",
+      "isFavorite": false
+    },
+    {
+      "id": 164,
+      "english": "Boat",
+      "egypet": "Markeb (مركب)",
+      "isFavorite": false
+    },
+    {
+      "id": 165,
+      "english": "Sailboat",
+      "egypet": "Felucca (فلوكة)",
+      "isFavorite": false
+    },
+    {
+      "id": 166,
+      "english": "Pyramid",
+      "egypet": "Haram (هرم)",
+      "isFavorite": false
+    },
+    {
+      "id": 167,
+      "english": "Temple",
+      "egypet": "Ma'bad (معبد)",
+      "isFavorite": false
+    },
+    {
+      "id": 168,
+      "english": "Museum",
+      "egypet": "Mathaf (متحف)",
+      "isFavorite": false
+    },
+    {
+      "id": 169,
+      "english": "Palace",
+      "egypet": "Qasr (قصر)",
+      "isFavorite": false
+    },
+    {
+      "id": 170,
+      "english": "Mosque",
+      "egypet": "Gamaa (جامع)",
+      "isFavorite": false
+    },
+    {
+      "id": 171,
+      "english": "Church",
+      "egypet": "Keneesa (كنيسة)",
+      "isFavorite": false
+    },
+    {
+      "id": 172,
+      "english": "Market",
+      "egypet": "Souq (سوق)",
+      "isFavorite": false
+    },
+    {
+      "id": 173,
+      "english": "Downtown",
+      "egypet": "Wust el-balad (وسط البلد)",
+      "isFavorite": false
+    },
+    {
+      "id": 174,
+      "english": "Old city",
+      "egypet": "El-balad el-adima (البلد القديمة)",
+      "isFavorite": false
+    },
+    {
+      "id": 175,
+      "english": "Ticket office",
+      "egypet": "Shobak el-tazaker (شباك التذاكر)",
+      "isFavorite": false
+    },
+    {
+      "id": 176,
+      "english": "Entrance fee",
+      "egypet": "Rasm dukhool (رسم دخول)",
+      "isFavorite": false
+    },
+    {
+      "id": 177,
+      "english": "Guide",
+      "egypet": "Daleel (دليل)",
+      "isFavorite": false
+    },
+    {
+      "id": 178,
+      "english": "Map",
+      "egypet": "Khareeta (خريطة)",
+      "isFavorite": false
+    },
+    {
+      "id": 179,
+      "english": "Photography",
+      "egypet": "Tasweer (تصوير)",
+      "isFavorite": false
+    },
+    {
+      "id": 180,
+      "english": "No flash",
+      "egypet": "Mamnoo' el-flash (ممنوع الفلاش)",
+      "isFavorite": false
+    },
+    {
+      "id": 181,
+      "english": "Camel",
+      "egypet": "Gamal (جمل)",
+      "isFavorite": false
+    },
+    {
+      "id": 182,
+      "english": "Horse",
+      "egypet": "Hosan (حصان)",
+      "isFavorite": false
+    },
+    {
+      "id": 183,
+      "english": "Carriage",
+      "egypet": "Hantour (حنطور)",
+      "isFavorite": false
+    },
+    {
+      "id": 184,
+      "english": "Souvenir",
+      "egypet": "Tizkar (تذكار)",
+      "isFavorite": false
+    },
+    {
+      "id": 185,
+      "english": "Handicraft",
+      "egypet": "Sina'a yadaweya (صناعة يدوية)",
+      "isFavorite": false
+    },
+    {
+      "id": 186,
+      "english": "Scarf",
+      "egypet": "Esharb (إشارب)",
+      "isFavorite": false
+    },
+    {
+      "id": 187,
+      "english": "Shirt",
+      "egypet": "Qamees (قميص)",
+      "isFavorite": false
+    },
+    {
+      "id": 188,
+      "english": "Pants",
+      "egypet": "Bantalon (بنطلون)",
+      "isFavorite": false
+    },
+    {
+      "id": 189,
+      "english": "Dress",
+      "egypet": "Fustan (فستان)",
+      "isFavorite": false
+    },
+    {
+      "id": 190,
+      "english": "Shoes",
+      "egypet": "Gazma (جزمة)",
+      "isFavorite": false
+    },
+    {
+      "id": 191,
+      "english": "Hat",
+      "egypet": "Kobba'a (قبعة)",
+      "isFavorite": false
+    },
+    {
+      "id": 192,
+      "english": "Bag",
+      "egypet": "Shanta (شنطة)",
+      "isFavorite": false
+    },
+    {
+      "id": 193,
+      "english": "Leather",
+      "egypet": "Geld (جلد)",
+      "isFavorite": false
+    },
+    {
+      "id": 194,
+      "english": "Cotton",
+      "egypet": "Cotton (قطن)",
+      "isFavorite": false
+    },
+    {
+      "id": 195,
+      "english": "Gold",
+      "egypet": "Dahab (دهب)",
+      "isFavorite": false
+    },
+    {
+      "id": 196,
+      "english": "Silver",
+      "egypet": "Fadda (فضة)",
+      "isFavorite": false
+    },
+    {
+      "id": 197,
+      "english": "Ring",
+      "egypet": "Khatem (خاتم)",
+      "isFavorite": false
+    },
+    {
+      "id": 198,
+      "english": "Bracelet",
+      "egypet": "Iswera (إسويرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 199,
+      "english": "Necklace",
+      "egypet": "Kerdan (كردان) / Aqd (عقد)",
+      "isFavorite": false
+    },
+    {
+      "id": 200,
+      "english": "Earrings",
+      "egypet": "Halak (حلق)",
+      "isFavorite": false
+    },
+    {
+      "id": 201,
+      "english": "Gift",
+      "egypet": "Hedeya (هدية)",
+      "isFavorite": false
+    },
+    {
+      "id": 202,
+      "english": "I want to buy",
+      "egypet": "Ayez ashtree (عايز أشتري) / Ayza ashtree (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 203,
+      "english": "I want to sell",
+      "egypet": "Ayez abee' (عايز أبيع) / Ayza abee' (f)",
+      "isFavorite": false
+    },
+    {
+      "id": 204,
+      "english": "Cheap",
+      "egypet": "Rokhis (رخيص)",
+      "isFavorite": false
+    },
+    {
+      "id": 205,
+      "english": "Expensive",
+      "egypet": "Ghali (غالي)",
+      "isFavorite": false
+    },
+    {
+      "id": 206,
+      "english": "Cash only",
+      "egypet": "Cash bas (كاش بس)",
+      "isFavorite": false
+    },
+    {
+      "id": 207,
+      "english": "Credit card",
+      "egypet": "Beta'a creedit (كارت ائتماني)",
+      "isFavorite": false
+    },
+    {
+      "id": 208,
+      "english": "Open",
+      "egypet": "Maftooh (مفتوح)",
+      "isFavorite": false
+    },
+    {
+      "id": 209,
+      "english": "Closed",
+      "egypet": "Ma'fil (مقفل)",
+      "isFavorite": false
+    },
+    {
+      "id": 210,
+      "english": "Sale",
+      "egypet": "Takhfeedat (تخفيضات)",
+      "isFavorite": false
+    },
+    {
+      "id": 211,
+      "english": "Clothes",
+      "egypet": "Hedoom (هدوم)",
+      "isFavorite": false
+    },
+    {
+      "id": 212,
+      "english": "Souvenirs store",
+      "egypet": "Mahall tizkarat (محل تذكارات)",
+      "isFavorite": false
+    },
+    {
+      "id": 213,
+      "english": "Shopping",
+      "egypet": "Tasawoq (تسوق)",
+      "isFavorite": false
+    },
+    {
+      "id": 214,
+      "english": "Mall",
+      "egypet": "Moll (مول)",
+      "isFavorite": false
+    },
+    {
+      "id": 215,
+      "english": "Price list",
+      "egypet": "Qaima bil asaar (قائمة بالأسعار)",
+      "isFavorite": false
+    },
+    {
+      "id": 216,
+      "english": "Window shopping",
+      "egypet": "Tafarug bas (تفرج بس)",
+      "isFavorite": false
+    },
+    {
+      "id": 217,
+      "english": "I'll come back later",
+      "egypet": "Harga' ba'deen (هرجع بعدين)",
+      "isFavorite": false
+    },
+    {
+      "id": 218,
+      "english": "I'm just looking",
+      "egypet": "Bas batfarag (بس بتفرج)",
+      "isFavorite": false
+    },
+    {
+      "id": 219,
+      "english": "No thanks",
+      "egypet": "La' shukran (لأ شكراً)",
+      "isFavorite": false
+    },
+    {
+      "id": 220,
+      "english": "Deal",
+      "egypet": "Safqa (صفقة)",
+      "isFavorite": false
+    },
+    {
+      "id": 221,
+      "english": "Family",
+      "egypet": "A'ila (عيلة)",
+      "isFavorite": false
+    },
+    {
+      "id": 222,
+      "english": "Father",
+      "egypet": "Ab (أب)",
+      "isFavorite": false
+    },
+    {
+      "id": 223,
+      "english": "Mother",
+      "egypet": "Om (أم)",
+      "isFavorite": false
+    },
+    {
+      "id": 224,
+      "english": "Brother",
+      "egypet": "Akhoo (أخو)",
+      "isFavorite": false
+    },
+    {
+      "id": 225,
+      "english": "Sister",
+      "egypet": "Okht (أخت)",
+      "isFavorite": false
+    },
+    {
+      "id": 226,
+      "english": "Son",
+      "egypet": "Ibn (ابن)",
+      "isFavorite": false
+    },
+    {
+      "id": 227,
+      "english": "Daughter",
+      "egypet": "Bint (بنت)",
+      "isFavorite": false
+    },
+    {
+      "id": 228,
+      "english": "Husband",
+      "egypet": "Goz (جوز)",
+      "isFavorite": false
+    },
+    {
+      "id": 229,
+      "english": "Wife",
+      "egypet": "Mara (مرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 230,
+      "english": "Child",
+      "egypet": "Tifl (طفل)",
+      "isFavorite": false
+    },
+    {
+      "id": 231,
+      "english": "Children",
+      "egypet": "Atfal (أطفال)",
+      "isFavorite": false
+    },
+    {
+      "id": 232,
+      "english": "Grandfather",
+      "egypet": "Gedo (جدو)",
+      "isFavorite": false
+    },
+    {
+      "id": 233,
+      "english": "Grandmother",
+      "egypet": "Teta (تيتا)",
+      "isFavorite": false
+    },
+    {
+      "id": 234,
+      "english": "Uncle (paternal)",
+      "egypet": "Ammo (عمّو)",
+      "isFavorite": false
+    },
+    {
+      "id": 235,
+      "english": "Uncle (maternal)",
+      "egypet": "Khalo (خالو)",
+      "isFavorite": false
+    },
+    {
+      "id": 236,
+      "english": "Aunt (paternal)",
+      "egypet": "Amma (عمة)",
+      "isFavorite": false
+    },
+    {
+      "id": 237,
+      "english": "Aunt (maternal)",
+      "egypet": "Khala (خالة)",
+      "isFavorite": false
+    },
+    {
+      "id": 238,
+      "english": "Cousin (male paternal)",
+      "egypet": "Ibn ammi (ابن عمي)",
+      "isFavorite": false
+    },
+    {
+      "id": 239,
+      "english": "Cousin (female paternal)",
+      "egypet": "Bint ammi (بنت عمي)",
+      "isFavorite": false
+    },
+    {
+      "id": 240,
+      "english": "Cousin (male maternal)",
+      "egypet": "Ibn khalti (ابن خالتي)",
+      "isFavorite": false
+    },
+    {
+      "id": 241,
+      "english": "Cousin (female maternal)",
+      "egypet": "Bint khalti (بنت خالتي)",
+      "isFavorite": false
+    },
+    {
+      "id": 242,
+      "english": "Friend (m)",
+      "egypet": "Sahbi (صاحبي)",
+      "isFavorite": false
+    },
+    {
+      "id": 243,
+      "english": "Friend (f)",
+      "egypet": "Sahbety (صاحبتي)",
+      "isFavorite": false
+    },
+    {
+      "id": 244,
+      "english": "Neighbor",
+      "egypet": "Gaar (جار) / Gaara (جارة)",
+      "isFavorite": false
+    },
+    {
+      "id": 245,
+      "english": "Work colleague",
+      "egypet": "Zameel fil shoghl (زميل في الشغل)",
+      "isFavorite": false
+    },
+    {
+      "id": 246,
+      "english": "Manager",
+      "egypet": "Modeer (مدير)",
+      "isFavorite": false
+    },
+    {
+      "id": 247,
+      "english": "Employee",
+      "egypet": "Mowazzaf (موظف)",
+      "isFavorite": false
+    },
+    {
+      "id": 248,
+      "english": "Boss",
+      "egypet": "Rayyes (ريس)",
+      "isFavorite": false
+    },
+    {
+      "id": 249,
+      "english": "Team",
+      "egypet": "Fareeq (فريق)",
+      "isFavorite": false
+    },
+    {
+      "id": 250,
+      "english": "Meeting",
+      "egypet": "Egtima' (اجتماع)",
+      "isFavorite": false
+    },
+    {
+      "id": 251,
+      "english": "Office",
+      "egypet": "Maktab (مكتب)",
+      "isFavorite": false
+    },
+    {
+      "id": 252,
+      "english": "Home",
+      "egypet": "Beit (بيت)",
+      "isFavorite": false
+    },
+    {
+      "id": 253,
+      "english": "House",
+      "egypet": "Manzel (منزل)",
+      "isFavorite": false
+    },
+    {
+      "id": 254,
+      "english": "Apartment",
+      "egypet": "Shaqqa (شقة)",
+      "isFavorite": false
+    },
+    {
+      "id": 255,
+      "english": "Roommate",
+      "egypet": "Shareek el-ghorfa (شريك الغرفة)",
+      "isFavorite": false
+    },
+    {
+      "id": 256,
+      "english": "Living room",
+      "egypet": "Odet ma'isha (أوضة معيشة)",
+      "isFavorite": false
+    },
+    {
+      "id": 257,
+      "english": "Kitchen",
+      "egypet": "Matbakh (مطبخ)",
+      "isFavorite": false
+    },
+    {
+      "id": 258,
+      "english": "Bathroom",
+      "egypet": "Hammam (حمام)",
+      "isFavorite": false
+    },
+    {
+      "id": 259,
+      "english": "Bedroom",
+      "egypet": "Odet noom (أوضة نوم)",
+      "isFavorite": false
+    },
+    {
+      "id": 260,
+      "english": "Dining room",
+      "egypet": "Odet sofra (أوضة سفرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 261,
+      "english": "Door",
+      "egypet": "Bab (باب)",
+      "isFavorite": false
+    },
+    {
+      "id": 262,
+      "english": "Window",
+      "egypet": "Shibbak (شباك)",
+      "isFavorite": false
+    },
+    {
+      "id": 263,
+      "english": "Chair",
+      "egypet": "Korsy (كرسي)",
+      "isFavorite": false
+    },
+    {
+      "id": 264,
+      "english": "Table",
+      "egypet": "Tarbiza (ترابيزة)",
+      "isFavorite": false
+    },
+    {
+      "id": 265,
+      "english": "Sofa",
+      "egypet": "Kanfah (كنبة)",
+      "isFavorite": false
+    },
+    {
+      "id": 266,
+      "english": "Television",
+      "egypet": "Telefizyon (تلفزيون)",
+      "isFavorite": false
+    },
+    {
+      "id": 267,
+      "english": "Lamp",
+      "egypet": "Lamba (لمبة)",
+      "isFavorite": false
+    },
+    {
+      "id": 268,
+      "english": "Fridge",
+      "egypet": "Tallaga (تلاجة)",
+      "isFavorite": false
+    },
+    {
+      "id": 269,
+      "english": "Stove",
+      "egypet": "Bootagas (بوتاجاز)",
+      "isFavorite": false
+    },
+    {
+      "id": 270,
+      "english": "Washing machine",
+      "egypet": "Ghasala (غسالة)",
+      "isFavorite": false
+    },
+    {
+      "id": 271,
+      "english": "Fan",
+      "egypet": "Marwaha (مروحة)",
+      "isFavorite": false
+    },
+    {
+      "id": 272,
+      "english": "Heater",
+      "egypet": "Dafaaya (دفاية)",
+      "isFavorite": false
+    },
+    {
+      "id": 273,
+      "english": "Cleaning",
+      "egypet": "Tanzeef (تنظيف)",
+      "isFavorite": false
+    },
+    {
+      "id": 274,
+      "english": "Sweeping",
+      "egypet": "Kans (كنس)",
+      "isFavorite": false
+    },
+    {
+      "id": 275,
+      "english": "Mopping",
+      "egypet": "Masah (مسح)",
+      "isFavorite": false
+    },
+    {
+      "id": 276,
+      "english": "Laundry",
+      "egypet": "Ghaseel (غسيل)",
+      "isFavorite": false
+    },
+    {
+      "id": 277,
+      "english": "Dishwashing",
+      "egypet": "Ghaseel atbaq (غسيل أطباق)",
+      "isFavorite": false
+    },
+    {
+      "id": 278,
+      "english": "Garbage",
+      "egypet": "Zebala (زبالة)",
+      "isFavorite": false
+    },
+    {
+      "id": 279,
+      "english": "Recycle",
+      "egypet": "E'adet tadweer (إعادة تدوير)",
+      "isFavorite": false
+    },
+    {
+      "id": 280,
+      "english": "Clothesline",
+      "egypet": "Habl ghaseel (حبل غسيل)",
+      "isFavorite": false
+    },
+    {
+      "id": 281,
+      "english": "Garden",
+      "egypet": "Ganeena (جنينة)",
+      "isFavorite": false
+    },
+    {
+      "id": 282,
+      "english": "Roof",
+      "egypet": "Sath (سطح)",
+      "isFavorite": false
+    },
+    {
+      "id": 283,
+      "english": "Basement",
+      "egypet": "Badroom (بدروم)",
+      "isFavorite": false
+    },
+    {
+      "id": 284,
+      "english": "Elevator",
+      "egypet": "Asanser (أسانسير)",
+      "isFavorite": false
+    },
+    {
+      "id": 285,
+      "english": "Stairs",
+      "egypet": "Sallam (سلم)",
+      "isFavorite": false
+    },
+    {
+      "id": 286,
+      "english": "Keychain",
+      "egypet": "Mafateeh (مفاتيح)",
+      "isFavorite": false
+    },
+    {
+      "id": 287,
+      "english": "Lock",
+      "egypet": "Qofl (قفل)",
+      "isFavorite": false
+    },
+    {
+      "id": 288,
+      "english": "Car",
+      "egypet": "Arabeya (عربية)",
+      "isFavorite": false
+    },
+    {
+      "id": 289,
+      "english": "Bus stop",
+      "egypet": "Mahattat otobis (محطة أتوبيس)",
+      "isFavorite": false
+    },
+    {
+      "id": 290,
+      "english": "Train station",
+      "egypet": "Mahattet el-qitar (محطة القطار)",
+      "isFavorite": false
+    },
+    {
+      "id": 291,
+      "english": "School",
+      "egypet": "Madrasa (مدرسة)",
+      "isFavorite": false
+    },
+    {
+      "id": 292,
+      "english": "University",
+      "egypet": "Gama'a (جامعة)",
+      "isFavorite": false
+    },
+    {
+      "id": 293,
+      "english": "Classroom",
+      "egypet": "Fasl (فصل)",
+      "isFavorite": false
+    },
+    {
+      "id": 294,
+      "english": "Teacher (m)",
+      "egypet": "Ustaz (أستاذ)",
+      "isFavorite": false
+    },
+    {
+      "id": 295,
+      "english": "Teacher (f)",
+      "egypet": "Ustaza (أستاذة)",
+      "isFavorite": false
+    },
+    {
+      "id": 296,
+      "english": "Student (m)",
+      "egypet": "Taleb (طالب)",
+      "isFavorite": false
+    },
+    {
+      "id": 297,
+      "english": "Student (f)",
+      "egypet": "Taleba (طالبة)",
+      "isFavorite": false
+    },
+    {
+      "id": 298,
+      "english": "Library",
+      "egypet": "Maktaba (مكتبة)",
+      "isFavorite": false
+    },
+    {
+      "id": 299,
+      "english": "Notebook",
+      "egypet": "Korrasah (كراسة)",
+      "isFavorite": false
+    },
+    {
+      "id": 300,
+      "english": "Pen",
+      "egypet": "Qalam (قلم)",
+      "isFavorite": false
+    },
+    {
+      "id": 301,
+      "english": "Pencil",
+      "egypet": "Qalam rosas (قلم رصاص)",
+      "isFavorite": false
+    },
+    {
+      "id": 302,
+      "english": "Eraser",
+      "egypet": "Masaaha (مساحة)",
+      "isFavorite": false
+    },
+    {
+      "id": 303,
+      "english": "Exam",
+      "egypet": "Imtehan (امتحان)",
+      "isFavorite": false
+    },
+    {
+      "id": 304,
+      "english": "Break",
+      "egypet": "Estiraha (استراحة)",
+      "isFavorite": false
+    },
+    {
+      "id": 305,
+      "english": "Holiday",
+      "egypet": "Eid (عيد) / Agaza (أجازة)",
+      "isFavorite": false
+    },
+    {
+      "id": 306,
+      "english": "Weekend",
+      "egypet": "Akhir el-esbo'a (آخر الأسبوع)",
+      "isFavorite": false
+    },
+    {
+      "id": 307,
+      "english": "Computer",
+      "egypet": "Combyouter (كمبيوتر)",
+      "isFavorite": false
+    },
+    {
+      "id": 308,
+      "english": "Laptop",
+      "egypet": "Laptop (لابتوب)",
+      "isFavorite": false
+    },
+    {
+      "id": 309,
+      "english": "Phone",
+      "egypet": "Telephon (تليفون)",
+      "isFavorite": false
+    },
+    {
+      "id": 310,
+      "english": "Mobile phone",
+      "egypet": "Mobayl (موبايل)",
+      "isFavorite": false
+    },
+    {
+      "id": 311,
+      "english": "Internet",
+      "egypet": "Internet (إنترنت)",
+      "isFavorite": false
+    },
+    {
+      "id": 312,
+      "english": "Email",
+      "egypet": "Bared electrony (بريد إلكتروني)",
+      "isFavorite": false
+    },
+    {
+      "id": 313,
+      "english": "Message",
+      "egypet": "Resala (رسالة)",
+      "isFavorite": false
+    },
+    {
+      "id": 314,
+      "english": "Call me",
+      "egypet": "Itta'sel beya (اتصل بيا)",
+      "isFavorite": false
+    },
+    {
+      "id": 315,
+      "english": "Text me",
+      "egypet": "Ab'atly message (ابعتلي رسالة)",
+      "isFavorite": false
+    },
+    {
+      "id": 316,
+      "english": "Password",
+      "egypet": "Kalemet serr (كلمة سر)",
+      "isFavorite": false
+    },
+    {
+      "id": 317,
+      "english": "Username",
+      "egypet": "Esm el mostakhdem (اسم المستخدم)",
+      "isFavorite": false
+    },
+    {
+      "id": 318,
+      "english": "Website",
+      "egypet": "Mawqea (موقع)",
+      "isFavorite": false
+    },
+    {
+      "id": 319,
+      "english": "Social media",
+      "egypet": "Mawaaqe' tawaasol (مواقع تواصل)",
+      "isFavorite": false
+    },
+    {
+      "id": 320,
+      "english": "Photo",
+      "egypet": "Sura (صورة)",
+      "isFavorite": false
+    },
+    {
+      "id": 321,
+      "english": "Video",
+      "egypet": "Video (فيديو)",
+      "isFavorite": false
+    },
+    {
+      "id": 322,
+      "english": "Music",
+      "egypet": "Musiqa (موسيقى)",
+      "isFavorite": false
+    },
+    {
+      "id": 323,
+      "english": "Song",
+      "egypet": "Oghneya (أغنية)",
+      "isFavorite": false
+    },
+    {
+      "id": 324,
+      "english": "Dance",
+      "egypet": "Raqs (رقص)",
+      "isFavorite": false
+    },
+    {
+      "id": 325,
+      "english": "Party",
+      "egypet": "Hafla (حفلة)",
+      "isFavorite": false
+    },
+    {
+      "id": 326,
+      "english": "Concert",
+      "egypet": "Haflet musiqa (حفلة موسيقية)",
+      "isFavorite": false
+    },
+    {
+      "id": 327,
+      "english": "Movie",
+      "egypet": "Film (فيلم)",
+      "isFavorite": false
+    },
+    {
+      "id": 328,
+      "english": "Cinema",
+      "egypet": "Cinama (سينما)",
+      "isFavorite": false
+    },
+    {
+      "id": 329,
+      "english": "Theater",
+      "egypet": "Masrah (مسرح)",
+      "isFavorite": false
+    },
+    {
+      "id": 330,
+      "english": "Actor (m)",
+      "egypet": "Momathil (ممثل)",
+      "isFavorite": false
+    },
+    {
+      "id": 331,
+      "english": "Actress (f)",
+      "egypet": "Momathila (ممثلة)",
+      "isFavorite": false
+    },
+    {
+      "id": 332,
+      "english": "Sports",
+      "egypet": "Riyada (رياضة)",
+      "isFavorite": false
+    },
+    {
+      "id": 333,
+      "english": "Football (soccer)",
+      "egypet": "Koora (كورة)",
+      "isFavorite": false
+    },
+    {
+      "id": 334,
+      "english": "Basketball",
+      "egypet": "Koora salla (كرة سلة)",
+      "isFavorite": false
+    },
+    {
+      "id": 335,
+      "english": "Volleyball",
+      "egypet": "Koora tayira (كرة طائرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 336,
+      "english": "Tennis",
+      "egypet": "Tennis (تنس)",
+      "isFavorite": false
+    },
+    {
+      "id": 337,
+      "english": "Swimming",
+      "egypet": "Sibaha (سباحة)",
+      "isFavorite": false
+    },
+    {
+      "id": 338,
+      "english": "Gym",
+      "egypet": "Gym (جيم)",
+      "isFavorite": false
+    },
+    {
+      "id": 339,
+      "english": "Exercise",
+      "egypet": "Tamarin (تمارين)",
+      "isFavorite": false
+    },
+    {
+      "id": 340,
+      "english": "Run",
+      "egypet": "Garay (جري)",
+      "isFavorite": false
+    },
+    {
+      "id": 341,
+      "english": "Walk",
+      "egypet": "Mashy (مشي)",
+      "isFavorite": false
+    },
+    {
+      "id": 342,
+      "english": "Climb",
+      "egypet": "Tassalluq (تسلق)",
+      "isFavorite": false
+    },
+    {
+      "id": 343,
+      "english": "Hike",
+      "egypet": "Mashwar toul (مشوار طويل)",
+      "isFavorite": false
+    },
+    {
+      "id": 344,
+      "english": "Healthy",
+      "egypet": "Sahy (صحي)",
+      "isFavorite": false
+    },
+    {
+      "id": 345,
+      "english": "Diet",
+      "egypet": "Regim (ريجيم)",
+      "isFavorite": false
+    },
+    {
+      "id": 346,
+      "english": "Weight",
+      "egypet": "Wazan (وزن)",
+      "isFavorite": false
+    },
+    {
+      "id": 347,
+      "english": "Doctor's appointment",
+      "egypet": "Ma'ed ma' el-doktor (معاد مع الدكتور)",
+      "isFavorite": false
+    },
+    {
+      "id": 348,
+      "english": "Medicine prescription",
+      "egypet": "Rosheta (روشتة)",
+      "isFavorite": false
+    },
+    {
+      "id": 349,
+      "english": "Hospital check-up",
+      "egypet": "Kashf fil mostashfa (كشف في المستشفى)",
+      "isFavorite": false
+    },
+    {
+      "id": 350,
+      "english": "Emergency",
+      "egypet": "Taware' (طوارئ)",
+      "isFavorite": false
+    },
+    {
+      "id": 351,
+      "english": "Weather",
+      "egypet": "El gaw (الجو)",
+      "isFavorite": false
+    },
+    {
+      "id": 352,
+      "english": "Hot",
+      "egypet": "Harr (حر)",
+      "isFavorite": false
+    },
+    {
+      "id": 353,
+      "english": "Cold",
+      "egypet": "Bard (برد)",
+      "isFavorite": false
+    },
+    {
+      "id": 354,
+      "english": "Windy",
+      "egypet": "Asef (عاصف)",
+      "isFavorite": false
+    },
+    {
+      "id": 355,
+      "english": "Rainy",
+      "egypet": "Momtir (ممطر)",
+      "isFavorite": false
+    },
+    {
+      "id": 356,
+      "english": "Sunny",
+      "egypet": "Moshmess (مشمس)",
+      "isFavorite": false
+    },
+    {
+      "id": 357,
+      "english": "Cloudy",
+      "egypet": "Maghayyem (مغيم)",
+      "isFavorite": false
+    },
+    {
+      "id": 358,
+      "english": "Storm",
+      "egypet": "Asefa (عاصفة)",
+      "isFavorite": false
+    },
+    {
+      "id": 359,
+      "english": "Snow",
+      "egypet": "Talg (تلج)",
+      "isFavorite": false
+    },
+    {
+      "id": 360,
+      "english": "Spring",
+      "egypet": "Rabee' (ربيع)",
+      "isFavorite": false
+    },
+    {
+      "id": 361,
+      "english": "Summer",
+      "egypet": "Seif (صيف)",
+      "isFavorite": false
+    },
+    {
+      "id": 362,
+      "english": "Autumn",
+      "egypet": "Khareef (خريف)",
+      "isFavorite": false
+    },
+    {
+      "id": 363,
+      "english": "Winter",
+      "egypet": "Sheta (شتا)",
+      "isFavorite": false
+    },
+    {
+      "id": 364,
+      "english": "What's the temperature?",
+      "egypet": "Kam el daraga? (كام الدرجة؟)",
+      "isFavorite": false
+    },
+    {
+      "id": 365,
+      "english": "Weather forecast",
+      "egypet": "Taqs motawaqa (طقس متوقع)",
+      "isFavorite": false
+    },
+    {
+      "id": 366,
+      "english": "Umbrella",
+      "egypet": "Shamsiya (شمسية)",
+      "isFavorite": false
+    },
+    {
+      "id": 367,
+      "english": "Sunglasses",
+      "egypet": "Naddara shams (نضارة شمس)",
+      "isFavorite": false
+    },
+    {
+      "id": 368,
+      "english": "Sandstorm",
+      "egypet": "Aasfa ramliya (عاصفة رملية)",
+      "isFavorite": false
+    },
+    {
+      "id": 369,
+      "english": "Humidity",
+      "egypet": "Rotooba (رطوبة)",
+      "isFavorite": false
+    },
+    {
+      "id": 370,
+      "english": "Climate",
+      "egypet": "Mokhayyem / Munaakh (مناخ)",
+      "isFavorite": false
+    },
+    {
+      "id": 371,
+      "english": "Forest",
+      "egypet": "Ghaba (غابة)",
+      "isFavorite": false
+    },
+    {
+      "id": 372,
+      "english": "Desert",
+      "egypet": "Sahra (صحراء)",
+      "isFavorite": false
+    },
+    {
+      "id": 373,
+      "english": "Mountain",
+      "egypet": "Gabal (جبل)",
+      "isFavorite": false
+    },
+    {
+      "id": 374,
+      "english": "Valley",
+      "egypet": "Wady (وادي)",
+      "isFavorite": false
+    },
+    {
+      "id": 375,
+      "english": "Lake",
+      "egypet": "Boheira (بحيرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 376,
+      "english": "Island",
+      "egypet": "Gezira (جزيرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 377,
+      "english": "Tree",
+      "egypet": "Shagara (شجرة)",
+      "isFavorite": false
+    },
+    {
+      "id": 378,
+      "english": "Flower",
+      "egypet": "Ward (ورد)",
+      "isFavorite": false
+    },
+    {
+      "id": 379,
+      "english": "Grass",
+      "egypet": "Hashish (حشيش)",
+      "isFavorite": false
+    },
+    {
+      "id": 380,
+      "english": "Stone",
+      "egypet": "Hagar (حجر)",
+      "isFavorite": false
+    },
+    {
+      "id": 381,
+      "english": "Rock",
+      "egypet": "Sakhr (صخر)",
+      "isFavorite": false
+    },
+    {
+      "id": 382,
+      "english": "Shell",
+      "egypet": "Sadaf (صدف)",
+      "isFavorite": false
+    },
+    {
+      "id": 383,
+      "english": "Sunrise",
+      "egypet": "Shorouq (شروق)",
+      "isFavorite": false
+    },
+    {
+      "id": 384,
+      "english": "Sunset",
+      "egypet": "Ghoroob (غروب)",
+      "isFavorite": false
+    },
+    {
+      "id": 385,
+      "english": "Moon",
+      "egypet": "Amar (قمر)",
+      "isFavorite": false
+    },
+    {
+      "id": 386,
+      "english": "Star",
+      "egypet": "Negma (نجمة)",
+      "isFavorite": false
+    },
+    {
+      "id": 387,
+      "english": "Sky",
+      "egypet": "Sama (سماء)",
+      "isFavorite": false
+    },
+    {
+      "id": 388,
+      "english": "Rainbow",
+      "egypet": "Qows qazah (قوس قزح)",
+      "isFavorite": false
+    },
+    {
+      "id": 389,
+      "english": "Nature",
+      "egypet": "Tabee'a (طبيعة)",
+      "isFavorite": false
+    },
+    {
+      "id": 390,
+      "english": "Pollution",
+      "egypet": "Talawoth (تلوث)",
+      "isFavorite": false
+    },
+    {
+      "id": 391,
+      "english": "Happy",
+      "egypet": "Mabsout (مبسوط)",
+      "isFavorite": false
+    },
+    {
+      "id": 392,
+      "english": "Sad",
+      "egypet": "Za'lan (زعلان)",
+      "isFavorite": false
+    },
+    {
+      "id": 393,
+      "english": "Angry",
+      "egypet": "Ghadban (غضبان)",
+      "isFavorite": false
+    },
+    {
+      "id": 394,
+      "english": "Afraid",
+      "egypet": "Khayef (خايف)",
+      "isFavorite": false
+    },
+    {
+      "id": 395,
+      "english": "Surprised",
+      "egypet": "Mafgou' / Mutaageb (مفجوع / متعجب)",
+      "isFavorite": false
+    },
+    {
+      "id": 396,
+      "english": "Embarrassed",
+      "egypet": "Khaglan (خجلان)",
+      "isFavorite": false
+    },
+    {
+      "id": 397,
+      "english": "Proud",
+      "egypet": "Fakhour (فخور)",
+      "isFavorite": false
+    },
+    {
+      "id": 398,
+      "english": "Nervous",
+      "egypet": "Mutawatar (متوتر)",
+      "isFavorite": false
+    },
+    {
+      "id": 399,
+      "english": "Excited",
+      "egypet": "Mota7ammes (متحمس)",
+      "isFavorite": false
+    },
+    {
+      "id": 400,
+      "english": "Bored",
+      "egypet": "Zahqan (زهقان)",
+      "isFavorite": false
+    },
+    {
+      "id": 401,
+      "english": "Tired",
+      "egypet": "Ta'ban (تعبان)",
+      "isFavorite": false
+    },
+    {
+      "id": 402,
+      "english": "Relaxed",
+      "egypet": "Mertah (مرتاح)",
+      "isFavorite": false
+    },
+    {
+      "id": 403,
+      "english": "Stressed",
+      "egypet": "Metdaye' (متضايق)",
+      "isFavorite": false
+    },
+    {
+      "id": 404,
+      "english": "Confused",
+      "egypet": "Makhloot (ملخبط)",
+      "isFavorite": false
+    },
+    {
+      "id": 405,
+      "english": "In love",
+      "egypet": "Aasheq (عاشق)",
+      "isFavorite": false
+    },
+    {
+      "id": 406,
+      "english": "Heart",
+      "egypet": "Alb (قلب)",
+      "isFavorite": false
+    },
+    {
+      "id": 407,
+      "english": "Mind",
+      "egypet": "Aql (عقل)",
+      "isFavorite": false
+    },
+    {
+      "id": 408,
+      "english": "Spirit",
+      "egypet": "Rooh (روح)",
+      "isFavorite": false
+    },
+    {
+      "id": 409,
+      "english": "Body",
+      "egypet": "Gesm (جسم)",
+      "isFavorite": false
+    },
+    {
+      "id": 410,
+      "english": "Soul",
+      "egypet": "Nafs (نفس)",
+      "isFavorite": false
+    },
+    {
+      "id": 411,
+      "english": "Time",
+      "egypet": "Waqt (وقت)",
+      "isFavorite": false
+    },
+    {
+      "id": 412,
+      "english": "Minute",
+      "egypet": "De'e'a (دقيقة)",
+      "isFavorite": false
+    },
+    {
+      "id": 413,
+      "english": "Hour",
+      "egypet": "Sa'a (ساعة)",
+      "isFavorite": false
+    },
+    {
+      "id": 414,
+      "english": "Day",
+      "egypet": "Youm (يوم)",
+      "isFavorite": false
+    },
+    {
+      "id": 415,
+      "english": "Week",
+      "egypet": "Esbo'a (أسبوع)",
+      "isFavorite": false
+    },
+    {
+      "id": 416,
+      "english": "Month",
+      "egypet": "Shahr (شهر)",
+      "isFavorite": false
+    },
+    {
+      "id": 417,
+      "english": "Year",
+      "egypet": "Sana (سنة)",
+      "isFavorite": false
+    },
+    {
+      "id": 418,
+      "english": "Monday",
+      "egypet": "El-Ethneen (الاثنين)",
+      "isFavorite": false
+    },
+    {
+      "id": 419,
+      "english": "Tuesday",
+      "egypet": "El-Talaata (الثلاثاء)",
+      "isFavorite": false
+    },
+    {
+      "id": 420,
+      "english": "Wednesday",
+      "egypet": "El-Arbaa (الأربعاء)",
+      "isFavorite": false
+    },
+    {
+      "id": 421,
+      "english": "Thursday",
+      "egypet": "El-Khamis (الخميس)",
+      "isFavorite": false
+    },
+    {
+      "id": 422,
+      "english": "Friday",
+      "egypet": "El-Gom'a (الجمعة)",
+      "isFavorite": false
+    },
+    {
+      "id": 423,
+      "english": "Saturday",
+      "egypet": "El-Sabt (السبت)",
+      "isFavorite": false
+    },
+    {
+      "id": 424,
+      "english": "Sunday",
+      "egypet": "El-Had (الأحد)",
+      "isFavorite": false
+    },
+    {
+      "id": 425,
+      "english": "January",
+      "egypet": "Yanaayir (يناير)",
+      "isFavorite": false
+    },
+    {
+      "id": 426,
+      "english": "February",
+      "egypet": "Febrayir (فبراير)",
+      "isFavorite": false
+    },
+    {
+      "id": 427,
+      "english": "March",
+      "egypet": "Mares (مارس)",
+      "isFavorite": false
+    },
+    {
+      "id": 428,
+      "english": "April",
+      "egypet": "Abreel (أبريل)",
+      "isFavorite": false
+    },
+    {
+      "id": 429,
+      "english": "May",
+      "egypet": "Mayo (مايو)",
+      "isFavorite": false
+    },
+    {
+      "id": 430,
+      "english": "June",
+      "egypet": "Yonyo (يونيو)",
+      "isFavorite": false
+    },
+    {
+      "id": 431,
+      "english": "July",
+      "egypet": "Yolyo (يوليو)",
+      "isFavorite": false
+    },
+    {
+      "id": 432,
+      "english": "August",
+      "egypet": "Oghostos (أغسطس)",
+      "isFavorite": false
+    },
+    {
+      "id": 433,
+      "english": "September",
+      "egypet": "Septambir (سبتمبر)",
+      "isFavorite": false
+    },
+    {
+      "id": 434,
+      "english": "October",
+      "egypet": "Octobir (أكتوبر)",
+      "isFavorite": false
+    },
+    {
+      "id": 435,
+      "english": "November",
+      "egypet": "Noofembir (نوفمبر)",
+      "isFavorite": false
+    },
+    {
+      "id": 436,
+      "english": "December",
+      "egypet": "Desembir (ديسمبر)",
+      "isFavorite": false
+    },
+    {
+      "id": 437,
+      "english": "Color",
+      "egypet": "Loon (لون)",
+      "isFavorite": false
+    },
+    {
+      "id": 438,
+      "english": "Red",
+      "egypet": "Ahmar (أحمر)",
+      "isFavorite": false
+    },
+    {
+      "id": 439,
+      "english": "Blue",
+      "egypet": "Azra' (أزرق)",
+      "isFavorite": false
+    },
+    {
+      "id": 440,
+      "english": "Green",
+      "egypet": "Akhadar (أخضر)",
+      "isFavorite": false
+    },
+    {
+      "id": 441,
+      "english": "Yellow",
+      "egypet": "Asfar (أصفر)",
+      "isFavorite": false
+    },
+    {
+      "id": 442,
+      "english": "White",
+      "egypet": "Abyad (أبيض)",
+      "isFavorite": false
+    },
+    {
+      "id": 443,
+      "english": "Black",
+      "egypet": "Eswid (أسود)",
+      "isFavorite": false
+    },
+    {
+      "id": 444,
+      "english": "Pink",
+      "egypet": "Bamba / Zahry (بمبة / زهري)",
+      "isFavorite": false
+    },
+    {
+      "id": 445,
+      "english": "Orange",
+      "egypet": "Bortuqany (برتقاني)",
+      "isFavorite": false
+    },
+    {
+      "id": 446,
+      "english": "Purple",
+      "egypet": "Banafseg (بنفسجي)",
+      "isFavorite": false
+    },
+    {
+      "id": 447,
+      "english": "Brown",
+      "egypet": "Bunny (بني)",
+      "isFavorite": false
+    },
+    {
+      "id": 448,
+      "english": "Gray",
+      "egypet": "Romady (رمادي)",
+      "isFavorite": false
+    },
+    {
+      "id": 449,
+      "english": "Silver color",
+      "egypet": "Faddy (فضي)",
+      "isFavorite": false
+    },
+    {
+      "id": 450,
+      "english": "Golden color",
+      "egypet": "Dahaby (ذهبي)",
+      "isFavorite": false
+    },
+    {
+      "id": 451,
+      "english": "To eat",
+      "egypet": "Yakol (ياكل)",
+      "isFavorite": false
+    },
+    {
+      "id": 452,
+      "english": "To drink",
+      "egypet": "Yeshrab (يشرب)",
+      "isFavorite": false
+    },
+    {
+      "id": 453,
+      "english": "To go",
+      "egypet": "Yrooh (يروح)",
+      "isFavorite": false
+    },
+    {
+      "id": 454,
+      "english": "To come",
+      "egypet": "Yegi (ييجي)",
+      "isFavorite": false
+    },
+    {
+      "id": 455,
+      "english": "To see",
+      "egypet": "Yshoof (يشوف)",
+      "isFavorite": false
+    },
+    {
+      "id": 456,
+      "english": "To speak",
+      "egypet": "Yetkallem (يتكلم)",
+      "isFavorite": false
+    },
+    {
+      "id": 457,
+      "english": "To sleep",
+      "egypet": "Ynam (ينام)",
+      "isFavorite": false
+    },
+    {
+      "id": 458,
+      "english": "To wake up",
+      "egypet": "Ysho' (يصحى)",
+      "isFavorite": false
+    },
+    {
+      "id": 459,
+      "english": "To buy",
+      "egypet": "Yeshteri (يشتري)",
+      "isFavorite": false
+    },
+    {
+      "id": 460,
+      "english": "To sell",
+      "egypet": "Ybee' (يبيع)",
+      "isFavorite": false
+    },
+    {
+      "id": 461,
+      "english": "To work",
+      "egypet": "Yeshtaghal (يشتغل)",
+      "isFavorite": false
+    },
+    {
+      "id": 462,
+      "english": "To read",
+      "egypet": "Yekra (يقرأ)",
+      "isFavorite": false
+    },
+    {
+      "id": 463,
+      "english": "To write",
+      "egypet": "Yekteb (يكتب)",
+      "isFavorite": false
+    },
+    {
+      "id": 464,
+      "english": "To open",
+      "egypet": "Yeftah (يفتح)",
+      "isFavorite": false
+    },
+    {
+      "id": 465,
+      "english": "To close",
+      "egypet": "Ye'fil (يقفل)",
+      "isFavorite": false
+    },
+    {
+      "id": 466,
+      "english": "To run",
+      "egypet": "Yegri (يجري)",
+      "isFavorite": false
+    },
+    {
+      "id": 467,
+      "english": "To walk",
+      "egypet": "Yemshi (يمشي)",
+      "isFavorite": false
+    },
+    {
+      "id": 468,
+      "english": "To rest",
+      "egypet": "Yertah (يرتاح)",
+      "isFavorite": false
+    },
+    {
+      "id": 469,
+      "english": "To help",
+      "egypet": "Ysa'ed (يساعد)",
+      "isFavorite": false
+    },
+    {
+      "id": 470,
+      "english": "To love",
+      "egypet": "Yheb (يحب)",
+      "isFavorite": false
+    },
+    {
+      "id": 471,
+      "english": "To hate",
+      "egypet": "Yekrah (يكره)",
+      "isFavorite": false
+    },
+    {
+      "id": 472,
+      "english": "To laugh",
+      "egypet": "Yedhak (يضحك)",
+      "isFavorite": false
+    },
+    {
+      "id": 473,
+      "english": "To cry",
+      "egypet": "Yebky (يبكي)",
+      "isFavorite": false
+    },
+    {
+      "id": 474,
+      "english": "To learn",
+      "egypet": "Yetalem (يتعلم)",
+      "isFavorite": false
+    },
+    {
+      "id": 475,
+      "english": "To teach",
+      "egypet": "Yedarris (يدرس)",
+      "isFavorite": false
+    },
+    {
+      "id": 476,
+      "english": "To wash",
+      "egypet": "Yeghsil (يغسل)",
+      "isFavorite": false
+    },
+    {
+      "id": 477,
+      "english": "To cook",
+      "egypet": "Yotbokh (يطبخ)",
+      "isFavorite": false
+    },
+    {
+      "id": 478,
+      "english": "To drive",
+      "egypet": "Yesoo' (يسوق)",
+      "isFavorite": false
+    },
+    {
+      "id": 479,
+      "english": "To ride",
+      "egypet": "Yerkab (يركب)",
+      "isFavorite": false
+    },
+    {
+      "id": 480,
+      "english": "To arrive",
+      "egypet": "Yowsal (يوصل)",
+      "isFavorite": false
+    },
+    {
+      "id": 481,
+      "english": "To leave",
+      "egypet": "Yemshi / Yeseeb (يمشي / يسيب)",
+      "isFavorite": false
+    },
+    {
+      "id": 482,
+      "english": "To start",
+      "egypet": "Yebda (يبدأ)",
+      "isFavorite": false
+    },
+    {
+      "id": 483,
+      "english": "To finish",
+      "egypet": "Yekhlas (يخلص)",
+      "isFavorite": false
+    },
+    {
+      "id": 484,
+      "english": "To pay",
+      "egypet": "Yedfa' (يدفع)",
+      "isFavorite": false
+    },
+    {
+      "id": 485,
+      "english": "To meet",
+      "egypet": "Ye'abel (يقابل)",
+      "isFavorite": false
+    },
+    {
+      "id": 486,
+      "english": "To call",
+      "egypet": "Yettasel (يتصل)",
+      "isFavorite": false
+    },
+    {
+      "id": 487,
+      "english": "To cancel",
+      "egypet": "Yelghi (يلغي)",
+      "isFavorite": false
+    },
+    {
+      "id": 488,
+      "english": "To reserve",
+      "egypet": "Yehguz (يحجز)",
+      "isFavorite": false
+    },
+    {
+      "id": 489,
+      "english": "To choose",
+      "egypet": "Yekhtar (يختار)",
+      "isFavorite": false
+    },
+    {
+      "id": 490,
+      "english": "To clean",
+      "egypet": "Yenaddef (ينضف)",
+      "isFavorite": false
+    },
+    {
+      "id": 491,
+      "english": "To dance",
+      "egypet": "Yer'os (يرقص)",
+      "isFavorite": false
+    },
+    {
+      "id": 492,
+      "english": "To travel",
+      "egypet": "Yesafer (يسافر)",
+      "isFavorite": false
+    },
+    {
+      "id": 493,
+      "english": "To book",
+      "egypet": "Yehguz (يحجز)",
+      "isFavorite": false
+    },
+    {
+      "id": 494,
+      "english": "To plan",
+      "egypet": "Yekhattet (يخطط)",
+      "isFavorite": false
+    },
+    {
+      "id": 495,
+      "english": "To celebrate",
+      "egypet": "Yahtafel (يحتفل)",
+      "isFavorite": false
+    },
+    {
+      "id": 496,
+      "english": "To remember",
+      "egypet": "Yeftaker (يفتكر)",
+      "isFavorite": false
+    },
+    {
+      "id": 497,
+      "english": "To forget",
+      "egypet": "Yensa (ينسى)",
+      "isFavorite": false
+    },
+    {
+      "id": 498,
+      "english": "To believe",
+      "egypet": "Ysaddeq (يصدق)",
+      "isFavorite": false
+    },
+    {
+      "id": 499,
+      "english": "To hope",
+      "egypet": "Yetmana (يتمنى)",
+      "isFavorite": false
+    },
+    {
+      "id": 500,
+      "english": "To try",
+      "egypet": "Yehawel (يحاول)",
+      "isFavorite": false
+    }
+  ]
+  

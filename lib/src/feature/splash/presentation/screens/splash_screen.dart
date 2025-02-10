@@ -1,3 +1,4 @@
+import 'package:egypet_trip/src/core/utils/size_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -22,8 +23,8 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> startLoading(BuildContext context) async {
-    await Future.delayed(const Duration(milliseconds: 1000));
-    context.go(RouteValue.home.path);
+   await Future.delayed(const Duration(milliseconds: 1000));
+   context.go(RouteValue.photo.path);
   }
 
   @override
@@ -40,15 +41,28 @@ class _SplashScreenState extends State<SplashScreen> {
       children: [
         Positioned.fill(
           child: AppIcon(
-            asset: IconProvider.splash.buildImageUrl(),
+            asset: IconProvider.back.buildImageUrl(),
             width: double.infinity,
             fit: BoxFit.cover,
           ),
         ),
-        AppIcon(
-          asset: IconProvider.logo.buildImageUrl(),
-          width: 298,
-          fit: BoxFit.fitWidth,
+        Positioned(
+          top: 100,
+          child: AppIcon(
+            asset: IconProvider.trip.buildImageUrl(),
+            width: 298,
+            fit: BoxFit.fitWidth,
+          ),
+        ),
+        Positioned(
+          bottom: -100,
+          left: 0,
+          right: 0,
+          child: AppIcon(
+            asset: IconProvider.cleo.buildImageUrl(),
+            
+            fit: BoxFit.cover,
+          ),
         ),
         Positioned(
             bottom: height * 0.036 + MediaQuery.of(context).padding.bottom,
@@ -75,19 +89,19 @@ class _LoadingAnimationState extends State<LoadingAnimation>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     )..repeat();
 
     _animation1 = Tween<double>(begin: 0, end: 1).animate(
-      CurvedAnimation(parent: _controller, curve: Interval(0.0, 0.6)),
+      CurvedAnimation(parent: _controller, curve: const Interval(0.0, 0.6)),
     );
 
     _animation2 = Tween<double>(begin: 0, end: 1).animate(
-      CurvedAnimation(parent: _controller, curve: Interval(0.2, 0.8)),
+      CurvedAnimation(parent: _controller, curve: const Interval(0.2, 0.8)),
     );
 
     _animation3 = Tween<double>(begin: 0, end: 1).animate(
-      CurvedAnimation(parent: _controller, curve: Interval(0.4, 1.0)),
+      CurvedAnimation(parent: _controller, curve: const Interval(0.4, 1.0)),
     );
   }
 
@@ -97,17 +111,17 @@ class _LoadingAnimationState extends State<LoadingAnimation>
       crossAxisAlignment: CrossAxisAlignment.end,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           'Loading',
           style: TextStyle(
             fontSize: 24,
           ),
         ),
-        Gap(3),
+        const Gap(3),
         AnimatedDot(animation: _animation1),
-        SizedBox(width: 8),
+        const SizedBox(width: 8),
         AnimatedDot(animation: _animation2),
-        SizedBox(width: 8),
+        const SizedBox(width: 8),
         AnimatedDot(animation: _animation3),
       ],
     );
@@ -137,7 +151,7 @@ class AnimatedDot extends StatelessWidget {
             child: Container(
               width: 4,
               height: 4,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 shape: BoxShape.circle,
               ),
