@@ -146,7 +146,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
                 left: 0,
                 right: 0,
                 child: SizedBox(
-                  width: getWidth(context, percent: 0.8),
+                  width: getWidth(context, percent: 0.7),
                   height: getHeight(context, percent: 0.6),
                   child: ValueListenableBuilder<String>(
                     valueListenable: photoProcessor.notifierText,
@@ -171,7 +171,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
                                     const EdgeInsets.fromLTRB(24.0, 0, 24, 24),
                                 child: Center(
                                   child: SizedBox(
-                                    width: getWidth(context, percent: 0.6),
+                                    width: getWidth(context, percent: 0.5),
                                     height: getHeight(context, percent: 0.1),
                                     child: SingleChildScrollView(
                                       child: Text(
@@ -186,12 +186,13 @@ class _PhotoScreenState extends State<PhotoScreen> {
                             ),
                           ),
                           Positioned(
-                            right: -getWidth(context, percent: 0.2),
-                            bottom: -getWidth(context, percent: 0.1),
+                            right: -getWidth(context, percent: 0.1),
+                            bottom: -getHeight(context, percent: 0.1),
                             child: AppIcon(
                               asset: IconProvider.cleo.buildImageUrl(),
-                              height: getHeight(context, percent: 0.6),
-                              
+                              height: getHeight(context, percent: 0.7),
+                              width: getWidth(context, percent: 0.4),
+                              fit: BoxFit.fitHeight,
                             ),
                           ),
                         ],

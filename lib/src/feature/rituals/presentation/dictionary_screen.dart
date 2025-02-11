@@ -104,7 +104,7 @@ class _DictionaryScreenState extends State<DictionaryScreen> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Icon(
-                                      CupertinoIcons.mic_fill,
+                                      CupertinoIcons.volume_up,
                                       color: Colors.white,
                                     ),
                                   ),

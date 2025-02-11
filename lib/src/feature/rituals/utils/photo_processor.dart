@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:egypet_trip/src/core/utils/log.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
+
 import 'package:flutter/services.dart';
 
 import 'package:image_picker/image_picker.dart';
@@ -37,7 +37,7 @@ class PhotoProcessor {
       // Фильтруем: оставляем только арабские символы
       final filteredText =
           recognizedText
-              .replaceAll(RegExp(r'[^\u0600-\u06FF]+'), '')
+             
       ;
 
       // Если в фильтрованном тексте есть что переводить

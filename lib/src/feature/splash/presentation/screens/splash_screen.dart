@@ -60,8 +60,8 @@ class _SplashScreenState extends State<SplashScreen> {
           right: 0,
           child: AppIcon(
             asset: IconProvider.cleo.buildImageUrl(),
-            
-            fit: BoxFit.cover,
+            height:  height * 0.8,
+            fit: BoxFit.fitHeight,
           ),
         ),
         Positioned(
