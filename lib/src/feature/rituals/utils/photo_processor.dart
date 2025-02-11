@@ -3,9 +3,12 @@ import 'dart:io';
 import 'package:egypet_trip/src/core/utils/log.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_tesseract_ocr/flutter_tesseract_ocr.dart';
+
 import 'package:image_picker/image_picker.dart';
 import 'package:translator/translator.dart';
+
+import 'dialog_processor.dart';
+
 
 class PhotoProcessor {
   final ValueNotifier<String> notifierText = ValueNotifier<String>('');
@@ -23,7 +26,7 @@ class PhotoProcessor {
     try {
       // Здесь идёт распознавание текста
       String recognizedText =
-          await FlutterTesseractOcr.extractText(imagePath, language: 'ara');
+          await AppleVisionOcr.recognizeText(imagePath);
 
       // Фильтруем: оставляем только арабские символы
       final filteredText =
@@ -38,7 +41,7 @@ class PhotoProcessor {
         translatedText = translation.text;
         notifierText.value = translatedText;
       } else {
-        notifierText.value = 'Masr text not found.';
+        notifierText.value = 'Arabic text not found.';
       }
     } catch (e) {
       logger.e('Error processing image: $e');
@@ -51,11 +54,11 @@ class PhotoProcessor {
       // Начинаем «процесс»
       isProcessing.value = true;
 
-      _pickedFile = await _picker.pickImage(source: source, imageQuality: 25);
-      if (_pickedFile != null) {
-        await _processImage(_pickedFile!.path);
-        notifierPickedFile.value = _pickedFile;
-      }
+      _pickedFile = await _picker.pickImage(source: source);
+     if (_pickedFile != null) {
+       await _processImage(_pickedFile!.path);
+       notifierPickedFile.value = _pickedFile;
+     }
     } catch (e) {
       logger.e('Error picking image: $e');
       notifierText.value = 'Error picking image: $e';

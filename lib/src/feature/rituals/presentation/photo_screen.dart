@@ -23,6 +23,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
     final height = MediaQuery.of(context).size.height;
 
     return SafeArea(
+      bottom: false,
       child: ValueListenableBuilder<bool>(
         valueListenable: photoProcessor.isProcessing,
         builder: (context, isProcessing, _) {
@@ -217,7 +218,7 @@ class PhotoButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedButton(
-      onPressed: () => onPressed(source),
+      onPressed: () =>  onPressed(source),
       child: AppIcon(
         asset: source == ImageSource.camera
             ? IconProvider.photo.buildImageUrl()

@@ -44,7 +44,7 @@ class ArticlesScreen extends StatelessWidget {
                           horizontal: 48, vertical: 16),
                       child: Text(
                         '${item.title}',
-                        style: TextStyle(fontSize: 32),
+                        style: TextStyle(fontSize: 28),
                       ),
                     ),
                     Positioned(

@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 
@@ -110,5 +113,27 @@ class DialogProcessor {
     } on Exception catch (e) {
       logger.e(e.toString());
     }
+  }
+}
+
+
+class AppleVisionOcr {
+  static const MethodChannel _channel = MethodChannel('apple_vision_ocr');
+
+  /// Распознаём текст из файла (фото).
+  /// [imagePath] – путь к локальному файлу (например, сделанный снимок или выбранный из галереи).
+  static Future<String> recognizeText(String imagePath) async {
+    if (!Platform.isIOS) {
+      throw UnsupportedError('Apple Vision OCR доступен только на iOS');
+    }
+
+    final recognizedText = await _channel.invokeMethod<String>(
+      'recognizeTextFromImage',
+      {
+        'path': imagePath,
+      },
+    );
+
+    return recognizedText ?? '';
   }
 }

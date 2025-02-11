@@ -20,152 +20,144 @@ class _DictionaryScreenState extends State<DictionaryScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-      child: BlocBuilder<UserBloc, UserState>(
-        builder: (context, state) {
-          if (state is! UserLoaded) {
-            return const CupertinoActivityIndicator();
-          }
-          return Stack(
-            children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height,
-                child: SingleChildScrollView(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                  child: SafeArea(
-                    right: false,
-                    left: false,
-                    bottom: false,
-                    child: ListView.separated(
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                      itemCount: isFavorite
-                          ? state.dictionary
-                              .where((element) => element.isFavorite == true)
-                              .length
-                          : state.dictionary.length,
-                      separatorBuilder: (
-                        context,
-                        index,
-                      ) =>
-                          const Gap(16),
-                      itemBuilder: (context, index) {
-                        final item = isFavorite
-                            ? state.dictionary
-                                .where((element) => element.isFavorite == true)
-                                .toList()[index]
-                            : state.dictionary[index];
-                        return Stack(
-                          alignment: Alignment.center,
-                          children: [
-                            AppIcon(asset: IconProvider.title.buildImageUrl()),
-                            Positioned(
-                              top: 16,
-                              right: 6,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  AnimatedButton(
-                                    onPressed: () {
-                                      context
-                                          .read<UserBloc>()
-                                          .add(DictionarySwitchFavorite(item));
-                                    },
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage(
-                                              IconProvider.fa.buildImageUrl()),
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Icon(
-                                          item.isFavorite ?? false
-                                              ? CupertinoIcons.heart_fill
-                                              : CupertinoIcons.heart,
-                                          color: Colors.white,
-                                        ),
-                                      ),
+    return BlocBuilder<UserBloc, UserState>(
+      builder: (context, state) {
+        if (state is! UserLoaded) {
+          return const CupertinoActivityIndicator();
+        }
+        return Stack(
+          children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height,
+              child: SingleChildScrollView(
+                padding:
+                    const EdgeInsets.fromLTRB(16,0,16,140),
+                child: ListView.separated(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: isFavorite
+                      ? state.dictionary
+                          .where((element) => element.isFavorite == true)
+                          .length
+                      : state.dictionary.length,
+                  separatorBuilder: (
+                    context,
+                    index,
+                  ) =>
+                      const Gap(16),
+                  itemBuilder: (context, index) {
+                    final item = isFavorite
+                        ? state.dictionary
+                            .where((element) => element.isFavorite == true)
+                            .toList()[index]
+                        : state.dictionary[index];
+                    return Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        AppIcon(asset: IconProvider.title.buildImageUrl()),
+                        Positioned(
+                          top: 26,
+                          right: 6,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              AnimatedButton(
+                                onPressed: () {
+                                  context
+                                      .read<UserBloc>()
+                                      .add(DictionarySwitchFavorite(item));
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          IconProvider.fa.buildImageUrl()),
                                     ),
                                   ),
-                                  Gap(16),
-                                  AnimatedButton(
-                                    onPressed: () async {
-                                      final speech = DialogProcessor()
-                                        ..speechInit();
-                                      speech.speakText(
-                                          item.egypet.split(' (')[0], 'en-US');
-                                    },
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        image: DecorationImage(
-                                          image: AssetImage(IconProvider.favour
-                                              .buildImageUrl()),
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Icon(
-                                          CupertinoIcons.mic_fill,
-                                          color: Colors.white,
-                                        ),
-                                      ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Icon(
+                                      item.isFavorite ?? false
+                                          ? CupertinoIcons.heart_fill
+                                          : CupertinoIcons.heart,
+                                      color: Colors.white,
                                     ),
                                   ),
-                                ],
+                                ),
                               ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 48, vertical: 16),
-                              child: Text(
-                                '${item.egypet} - ${item.english}',
-                                style: TextStyle(fontSize: 24),
+                              Gap(16),
+                              AnimatedButton(
+                                onPressed: () async {
+                                  final speech = DialogProcessor()
+                                    ..speechInit();
+                                  speech.speakText(
+                                      item.egypet.split(' (')[0], 'en-US');
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage(IconProvider.favour
+                                          .buildImageUrl()),
+                                    ),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Icon(
+                                      CupertinoIcons.mic_fill,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ),
-                          ],
-                        );
-                      },
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                bottom: 100,
-                right: 0,
-                child: AnimatedButton(
-                  onPressed: () {
-                    setState(() {
-                      isFavorite = !isFavorite;
-                    });
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 48, vertical: 16),
+                          child: Text(
+                            '${item.egypet} - ${item.english}',
+                            style: TextStyle(fontSize: 24),
+                          ),
+                        ),
+                      ],
+                    );
                   },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(IconProvider.favour.buildImageUrl()),
-                      ),
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 120,
+              right: 0,
+              child: AnimatedButton(
+                onPressed: () {
+                  setState(() {
+                    isFavorite = !isFavorite;
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(IconProvider.favour.buildImageUrl()),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(24.0),
-                      child: Icon(
-                        isFavorite
-                            ? CupertinoIcons.heart_fill
-                            : CupertinoIcons.heart,
-                        size: 32,
-                        color: Colors.white,
-                      ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(24.0),
+                    child: Icon(
+                      isFavorite
+                          ? CupertinoIcons.heart_fill
+                          : CupertinoIcons.heart,
+                      size: 32,
+                      color: Colors.white,
                     ),
                   ),
                 ),
               ),
-            ],
-          );
-        },
-      ),
+            ),
+          ],
+        );
+      },
     );
   }
 }
