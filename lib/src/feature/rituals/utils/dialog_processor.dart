@@ -31,12 +31,7 @@ class DialogProcessor {
       
       // Initialize speech
       _isSpeechInit = await _speech.initialize(
-        onStatus: (status) => logger.i('Status: $status'),
-        onError: (errorNotification) {
-          notifierDialog.value = false;
-          logger.e('Error: ${errorNotification.errorMsg}');
-        },
-        debugLogging: true,
+
       );
 
       // Optional: check what locales are actually available
@@ -119,6 +114,12 @@ class DialogProcessor {
 
 class AppleVisionOcr {
   static const MethodChannel _channel = MethodChannel('apple_vision_ocr');
+
+  static const EventChannel _eventChannel = EventChannel('apple_vision_ocr/events');
+
+  /// Получаем поток событий
+  static Stream<dynamic> get eventsStream => _eventChannel.receiveBroadcastStream();
+
 
   /// Распознаём текст из файла (фото).
   /// [imagePath] – путь к локальному файлу (например, сделанный снимок или выбранный из галереи).

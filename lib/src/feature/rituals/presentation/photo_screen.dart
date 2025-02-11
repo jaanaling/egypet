@@ -8,6 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../utils/dialog_processor.dart';
+
 class PhotoScreen extends StatefulWidget {
   const PhotoScreen({Key? key}) : super(key: key);
 
@@ -17,6 +19,13 @@ class PhotoScreen extends StatefulWidget {
 
 class _PhotoScreenState extends State<PhotoScreen> {
   final PhotoProcessor photoProcessor = PhotoProcessor();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -51,5 +51,7 @@
     <string>We need access to your photo library to pick images.</string>
     <key>NSCameraUsageDescription</key>
     <string>We need access to your camera to take pictures.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>The app needs access to speech recognition to convert audio to text.</string>
 </dict>
 </plist>

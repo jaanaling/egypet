@@ -3,8 +3,10 @@ import 'dart:io';
 import 'package:egypet_trip/src/core/utils/log.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:image_picker/image_picker.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:translator/translator.dart';
 
 import 'dialog_processor.dart';
@@ -24,13 +26,18 @@ class PhotoProcessor {
 
   Future<void> _processImage(String imagePath) async {
     try {
-      // Здесь идёт распознавание текста
+      AppleVisionOcr.eventsStream.listen((event) {
+
+        print("Получено событие: ${event.toString()}");
+      });
       String recognizedText =
           await AppleVisionOcr.recognizeText(imagePath);
 
       // Фильтруем: оставляем только арабские символы
       final filteredText =
-          recognizedText.replaceAll(RegExp(r'[^\u0600-\u06FF]+'), '');
+          recognizedText
+              .replaceAll(RegExp(r'[^\u0600-\u06FF]+'), '')
+      ;
 
       // Если в фильтрованном тексте есть что переводить
       if (filteredText.isNotEmpty) {
@@ -41,7 +48,7 @@ class PhotoProcessor {
         translatedText = translation.text;
         notifierText.value = translatedText;
       } else {
-        notifierText.value = 'Arabic text not found.';
+        notifierText.value = 'Masr text not found.';
       }
     } catch (e) {
       logger.e('Error processing image: $e');
@@ -51,7 +58,6 @@ class PhotoProcessor {
 
   Future<void> pickImage(ImageSource source) async {
     try {
-      // Начинаем «процесс»
       isProcessing.value = true;
 
       _pickedFile = await _picker.pickImage(source: source);
@@ -63,8 +69,8 @@ class PhotoProcessor {
       logger.e('Error picking image: $e');
       notifierText.value = 'Error picking image: $e';
     } finally {
-      // В любом случае (успех или ошибка) завершаем «процесс»
       isProcessing.value = false;
     }
   }
+
 }

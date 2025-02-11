@@ -21,7 +21,7 @@ class _DialogScreenState extends State<DialogScreen> {
   @override
   void initState() {
     super.initState();
-    // dialogProcessor.speechInit();
+    dialogProcessor.speechInit();
   }
 
   Future<void> stopListen() async {
