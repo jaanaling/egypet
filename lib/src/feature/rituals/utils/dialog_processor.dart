@@ -82,7 +82,7 @@ class DialogProcessor {
           );
 
           // If we used 'ar-SA' in TTS/speech, keep it, or toggle
-          _language = _language.startsWith('ar') ? 'en-US' : 'ar-EG';
+          _language = _language.startsWith('ar') ? 'en-US' : 'ar';
 
           messages.add({
             'language': _language,

@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:egypet_trip/src/core/utils/log.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter/services.dart';
 
 import 'package:image_picker/image_picker.dart';
@@ -58,19 +59,28 @@ class PhotoProcessor {
 
   Future<void> pickImage(ImageSource source) async {
     try {
+      // Начинаем «процесс»
       isProcessing.value = true;
 
-      _pickedFile = await _picker.pickImage(source: source);
-     if (_pickedFile != null) {
-       await _processImage(_pickedFile!.path);
-       notifierPickedFile.value = _pickedFile;
-     }
+      _pickedFile = await _picker.pickImage(source: source, imageQuality: 25);
+      if (_pickedFile != null) {
+        await _processImage(await copyAssetToFile(_pickedFile!.path));
+        notifierPickedFile.value = _pickedFile;
+      }
     } catch (e) {
       logger.e('Error picking image: $e');
       notifierText.value = 'Error picking image: $e';
     } finally {
+      // В любом случае (успех или ошибка) завершаем «процесс»
       isProcessing.value = false;
     }
   }
 
+  Future<String> copyAssetToFile(String assetPath) async {
+    final byteData = await rootBundle.load(assetPath);
+    final tempDir = await getTemporaryDirectory();
+    final file = File('${tempDir.path}/${assetPath.split('/').last}');
+    await file.writeAsBytes(byteData.buffer.asUint8List());
+    return file.path;
+  }
 }

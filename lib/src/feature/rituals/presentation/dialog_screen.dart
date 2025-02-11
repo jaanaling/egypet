@@ -144,7 +144,7 @@ class _DialogScreenState extends State<DialogScreen> {
                               MicrophoneButton(
                                 isEnglish: false,
                                 onListen: () {
-                                  dialogProcessor.startListening('ar-EG');
+                                  dialogProcessor.startListening('ar');
                                   isEnglish = false;
                                 },
                                 onStopListen: () async {
