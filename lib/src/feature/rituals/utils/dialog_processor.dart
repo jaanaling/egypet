@@ -14,7 +14,13 @@ class DialogProcessor {
   final stt.SpeechToText _speech = stt.SpeechToText();
   final FlutterTts _flutterTts = FlutterTts();
   final _translator = GoogleTranslator();
-  final List<Map<String, String>> messages = [];
+  final List<Map<String, String>> messages = [
+    {'en-US': "Hello!"},
+    {'ar': "مرحبًا"},
+    {'en-US': "Can you tell me how to get to the Mosque?"},
+    {'ar': 'عليك أن تصعد إلى الشارع'}
+
+  ];
 
   final _listenForDuration = const Duration(seconds: 30);
   final _pauseForDuration = const Duration(seconds: 10);

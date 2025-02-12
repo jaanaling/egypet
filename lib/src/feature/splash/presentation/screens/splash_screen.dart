@@ -1,3 +1,4 @@
+import 'package:advertising_id/advertising_id.dart';
 import 'package:egypet_trip/src/core/utils/size_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -23,8 +24,9 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> startLoading(BuildContext context) async {
-   await Future.delayed(const Duration(milliseconds: 1000));
-   context.go(RouteValue.photo.path);
+    await Future.delayed(const Duration(milliseconds: 1000));
+    await AdvertisingId.id(true);
+    context.go(RouteValue.photo.path);
   }
 
   @override
@@ -60,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
           right: 0,
           child: AppIcon(
             asset: IconProvider.cleo.buildImageUrl(),
-            height:  height * 0.8,
+            height: height * 0.8,
             fit: BoxFit.fitHeight,
           ),
         ),

@@ -63,6 +63,7 @@ class PhotoProcessor {
       isProcessing.value = true;
 
       _pickedFile = await _picker.pickImage(source: source, imageQuality: 25);
+
       if (_pickedFile != null) {
         await _processImage(await copyAssetToFile(_pickedFile!.path));
         notifierPickedFile.value = _pickedFile;

@@ -47,11 +47,13 @@
 	</array>
 	<key>NSMicrophoneUsageDescription</key>
     <string>We need access to your microphone to recognize speech.</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>We need access to your photo library to pick images.</string>
-    <key>NSCameraUsageDescription</key>
-    <string>We need access to your camera to take pictures.</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>We need access to your photo library to select images for text translation.</string>
+  <key>NSCameraUsageDescription</key>
+  <string>We need access to your camera to capture images for text translation.</string>
     <key>NSSpeechRecognitionUsageDescription</key>
     <string>The app needs access to speech recognition to convert audio to text.</string>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>We request access to your device's advertising identifier to deliver relevant content, optimize advertising performance, and ensure that promotions align with your preferences.</string>
 </dict>
 </plist>
