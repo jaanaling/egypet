@@ -1,11 +1,14 @@
 import 'dart:io';
+import 'package:egypet_trip/routes/route_value.dart';
 import 'package:egypet_trip/src/core/utils/app_icon.dart';
 import 'package:egypet_trip/src/core/utils/icon_provider.dart';
 import 'package:egypet_trip/src/core/utils/size_utils.dart';
 import 'package:egypet_trip/src/feature/rituals/utils/photo_processor.dart';
 import 'package:egypet_trip/ui_kit/animated_button.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../utils/dialog_processor.dart';
@@ -24,7 +27,6 @@ class _PhotoScreenState extends State<PhotoScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-
   }
 
   @override
@@ -38,7 +40,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
         builder: (context, isProcessing, _) {
           return Stack(
             children: [
-              // --- Основной контент ---
+             
               Positioned(
                 top: 0,
                 left: 0,
@@ -130,6 +132,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
                                             source: ImageSource.camera,
                                             onPressed: photoProcessor.pickImage,
                                           ),
+                                          const SizedBox(width: 16),
                                         ],
                                       ),
                                     ),
@@ -201,11 +204,33 @@ class _PhotoScreenState extends State<PhotoScreen> {
                   ),
                 ),
               ),
-
               if (isProcessing) ...[
                 ModalBarrier(color: Colors.black45),
                 const Center(child: CircularProgressIndicator()),
               ],
+               Positioned(
+                left: 20,
+                top: 10,
+                child: AnimatedButton(
+                  onPressed: () => context.push(
+                      "${RouteValue.photo.path}/${RouteValue.privacy.path}"),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(IconProvider.favour.buildImageUrl()),
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        CupertinoIcons.lock_shield_fill,
+                        size: 24,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           );
         },
@@ -228,7 +253,7 @@ class PhotoButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedButton(
-      onPressed: () =>  onPressed(source),
+      onPressed: () => onPressed(source),
       child: AppIcon(
         asset: source == ImageSource.camera
             ? IconProvider.photo.buildImageUrl()
@@ -236,5 +261,14 @@ class PhotoButton extends StatelessWidget {
         width: isActive ? 96 : 40,
       ),
     );
+  }
+}
+
+class PrivacyScreen extends StatelessWidget {
+  const PrivacyScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }

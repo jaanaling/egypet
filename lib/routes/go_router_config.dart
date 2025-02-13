@@ -36,9 +36,14 @@ GoRouter buildGoRouter = GoRouter(
           navigatorKey: _photoNavigatorKey,
           routes: <RouteBase>[
             GoRoute(
-              path: RouteValue.photo.path,
-              builder: (context, state) => PhotoScreen(key: UniqueKey()),
-            ),
+                path: RouteValue.photo.path,
+                builder: (context, state) => PhotoScreen(key: UniqueKey()),
+                routes: [
+                  GoRoute(
+                    path: RouteValue.privacy.path,
+                    builder: (context, state) => PrivacyScreen(key: UniqueKey()),
+                  ),
+                ]),
           ],
         ),
         StatefulShellBranch(

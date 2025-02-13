@@ -24,7 +24,10 @@ enum RouteValue {
     path: 'article',
   
   ),
-
+  privacy(
+    path: 'privacy',
+  
+  ),
   unknown(
     path: '',
  
