@@ -1,3 +1,4 @@
+import 'package:core_logic/core_logic.dart';
 import 'package:egypet_trip/src/feature/rituals/model/article.dart';
 import 'package:egypet_trip/src/feature/rituals/presentation/article_screen.dart';
 import 'package:egypet_trip/src/feature/rituals/presentation/articles_screen.dart';
@@ -85,6 +86,17 @@ GoRouter buildGoRouter = GoRouter(
           ],
         ),
       ],
+    ),
+    GoRoute(
+      parentNavigatorKey: _rootNavigatorKey,
+      path: '/core',
+      pageBuilder: (context, state) {
+        return NoTransitionPage(
+          child: CoreScreen(
+            key: UniqueKey(),
+          ),
+        );
+      },
     ),
     ShellRoute(
       navigatorKey: _shellNavigatorKey,

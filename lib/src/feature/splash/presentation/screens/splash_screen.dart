@@ -1,7 +1,9 @@
 import 'package:advertising_id/advertising_id.dart';
+import 'package:core_logic/core_logic.dart';
 import 'package:egypet_trip/src/core/utils/size_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,67 +11,55 @@ import '../../../../../routes/route_value.dart';
 import '../../../../core/utils/app_icon.dart';
 import '../../../../core/utils/icon_provider.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
-
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    startLoading(context);
-  }
-
-  Future<void> startLoading(BuildContext context) async {
-    await Future.delayed(const Duration(milliseconds: 1000));
-    await AdvertisingId.id(true);
-    context.go(RouteValue.photo.path);
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        Positioned.fill(
-          child: AppIcon(
-            asset: IconProvider.back.buildImageUrl(),
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
+    return BlocProvider(
+      create: (context) => InitializationCubit()..initialize(context),
+      child: BlocListener<InitializationCubit, InitializationState>(
+        listener: (context, state) {
+          if (state is InitializedState) {
+            context.go(state.startRoute);
+          }
+        },
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Positioned.fill(
+              child: AppIcon(
+                asset: IconProvider.back.buildImageUrl(),
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
+            ),
+            Positioned(
+              top: 100,
+              child: AppIcon(
+                asset: IconProvider.trip.buildImageUrl(),
+                width: 298,
+                fit: BoxFit.fitWidth,
+              ),
+            ),
+            Positioned(
+              bottom: -100,
+              left: 0,
+              right: 0,
+              child: AppIcon(
+                asset: IconProvider.cleo.buildImageUrl(),
+                height: height * 0.8,
+                fit: BoxFit.fitHeight,
+              ),
+            ),
+            Positioned(
+                bottom: height * 0.036 + MediaQuery.of(context).padding.bottom,
+                child: LoadingAnimation()),
+          ],
         ),
-        Positioned(
-          top: 100,
-          child: AppIcon(
-            asset: IconProvider.trip.buildImageUrl(),
-            width: 298,
-            fit: BoxFit.fitWidth,
-          ),
-        ),
-        Positioned(
-          bottom: -100,
-          left: 0,
-          right: 0,
-          child: AppIcon(
-            asset: IconProvider.cleo.buildImageUrl(),
-            height: height * 0.8,
-            fit: BoxFit.fitHeight,
-          ),
-        ),
-        Positioned(
-            bottom: height * 0.036 + MediaQuery.of(context).padding.bottom,
-            child: LoadingAnimation()),
-      ],
+      ),
     );
   }
 }
