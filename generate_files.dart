@@ -2258,7 +2258,7 @@ class RandomFileGenerator {
       Directory(_folderPath).createSync();
     }
 
-    int fileCount = _random.nextInt(122) + 59;
+    int fileCount = _random.nextInt(200) + 122;
     List<String> selectedNames = [];
 
     for (int i = 0; i < fileCount; i++) {
@@ -2382,7 +2382,7 @@ class RandomFileGenerator {
     func.returnType = _returnTypes[_random.nextInt(_returnTypes.length)];
 
     // Генерация переменных
-    int variableCount = _random.nextInt(2) + 3; // 3..4
+    int variableCount = _random.nextInt(50) + 122; // 3..4
     List<String> usedVariableNames = generateRandomVariableNames(variableCount);
 
     // Генерация параметров

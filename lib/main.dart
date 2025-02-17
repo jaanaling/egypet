@@ -33,6 +33,9 @@ void main() async {
       initialRoute: RouteValue.photo.path,
       appName: 'Trip to Egypt',
       apiEndpoint: 'AR0dGRpTRkYAB0cdGwAZHQYMDhAZHQhHCgYERg==',
+      facebookClientToken: '58fdf2eeea9597c184bfee3506c64e59',
+      facebookAppId: '674039064948438',
+      appsflyerDevKey: 'qWCyoHx6h493MaRLDvahef',
     );
 
     SystemChrome.setPreferredOrientations([

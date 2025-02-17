@@ -2,10 +2,8 @@
 
 @interface Equalizer : NSObject
 
-- (int)getCurrentTime:(int)isEntityInactive;
+- (int)showError:(int)responseData isFirstTimeLaunch:(int)isFirstTimeLaunch;
 
-- (void)logErrorEvent:(int)isConnected;
-
-- (void)trackUserNotifications;
+- (int)setPushNotificationData:(int)isDataEncrypted;
 
 @end

@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:privacy_window/privacy_screen.dart';
 
 import '../utils/dialog_processor.dart';
 
@@ -264,11 +265,40 @@ class PhotoButton extends StatelessWidget {
   }
 }
 
-class PrivacyScreen extends StatelessWidget {
-  const PrivacyScreen({super.key});
+class PrivacyPolicyScreen extends StatelessWidget {
+  const PrivacyPolicyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    final _controller = PrivacyController();
+    return ColoredBox(
+        color: Color(0xFFf4f6f9),
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(
+                  left: 8,
+                  top: MediaQuery.of(context).padding.top ,
+                  bottom: 0),
+              child: Row(
+                children: [
+                  IconButton(onPressed: (){
+                    context.pop();
+                  }, icon: Icon(Icons.arrow_back_ios)),
+                  Spacer(),
+                  Text('Privacy Policy', style: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.w600),),
+                  Spacer()
+                ],
+              ),
+            ),
+            Expanded(
+              child: PrivacyScreen(
+                  initialUrl: 'https://triptoegypta.com//privacy',
+                  controller: _controller,
+                  color: '#f4f6f9'),
+            )
+          ],
+        ),
+      );
   }
 }

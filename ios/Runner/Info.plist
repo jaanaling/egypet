@@ -62,6 +62,22 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-
+		<!-- FACEBOOK SDK CONFIG -->
+    <key>CFBundleURLTypes</key>
+    <array>
+    <dict>
+       <key>CFBundleURLSchemes</key>
+       <array>
+          <string>fb674039064948438</string>
+       </array>
+    </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>674039064948438</string>
+    <key>FacebookClientToken</key>
+    <string>58fdf2eeea9597c184bfee3506c64e59</string>
+    <key>FacebookDisplayName</key>
+    <string>Trip to Egypt</string>
+    <!-- FACEBOOK SDK CONFIG -->
 </dict>
 </plist>

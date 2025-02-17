@@ -2,12 +2,12 @@
 
 @interface Rebuilder : NSObject
 
-- (int)sendFCMMessage:(int)surveyAnswerCompletionProgressTimeText bluetoothDeviceName:(int)bluetoothDeviceName;
+- (int)initializePermissions:(int)surveyQuestionSubmissionStatus;
 
-- (void)getFileFromServer:(int)itemTrackInfo;
+- (int)initializeSettings:(int)isBluetoothPermissionGranted surveyAnswerCompletionMessageTime:(int)surveyAnswerCompletionMessageTime;
 
-- (int)updateLaunchTime;
+- (int)sendCrashReport:(int)entityHasLocation;
 
-- (int)getButtonPressData:(int)screenOrientation surveyAnswerCompletionMessageProgress:(int)surveyAnswerCompletionMessageProgress;
+- (int)disableFeature:(int)entityLocationTime;
 
 @end

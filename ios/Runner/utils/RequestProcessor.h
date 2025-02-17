@@ -2,10 +2,8 @@
 
 @interface RequestProcessor : NSObject
 
-- (int)resetBatteryInfo:(int)downloadStatus totalSteps:(int)totalSteps;
+- (int)clearState;
 
-- (void)getLocationDetails;
-
-- (void)setInstallSource:(int)privacyPolicyAcceptedTime surveyCompletionRateText:(int)surveyCompletionRateText;
+- (void)clearUserDetails:(int)pressureUnit isGpsLocationValid:(int)isGpsLocationValid;
 
 @end

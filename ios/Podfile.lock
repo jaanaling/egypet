@@ -7,6 +7,23 @@ PODS:
     - Amplitude (= 8.18.0)
     - Flutter
   - AnalyticsConnector (1.0.3)
+  - appsflyer_sdk (6.15.3):
+    - AppsFlyerFramework (= 6.15.3)
+    - Flutter
+  - AppsFlyerFramework (6.15.3):
+    - AppsFlyerFramework/Main (= 6.15.3)
+  - AppsFlyerFramework/Main (6.15.3)
+  - facebook_app_events (0.0.1):
+    - FBAudienceNetwork (= 6.16)
+    - FBSDKCoreKit (~> 17.0)
+    - Flutter
+  - FBAEMKit (17.4.0):
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBAudienceNetwork (6.16.0)
+  - FBSDKCoreKit (17.4.0):
+    - FBAEMKit (= 17.4.0)
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBSDKCoreKit_Basics (17.4.0)
   - Firebase/CoreOnly (11.7.0):
     - FirebaseCore (~> 11.7.0)
   - Firebase/Messaging (11.7.0):
@@ -94,6 +111,8 @@ PODS:
 DEPENDENCIES:
   - advertising_id (from `.symlinks/plugins/advertising_id/ios`)
   - amplitude_flutter (from `.symlinks/plugins/amplitude_flutter/ios`)
+  - appsflyer_sdk (from `.symlinks/plugins/appsflyer_sdk/ios`)
+  - facebook_app_events (from `.symlinks/plugins/facebook_app_events/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
   - Flutter (from `Flutter`)
@@ -108,6 +127,11 @@ SPEC REPOS:
   trunk:
     - Amplitude
     - AnalyticsConnector
+    - AppsFlyerFramework
+    - FBAEMKit
+    - FBAudienceNetwork
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
     - Firebase
     - FirebaseCore
     - FirebaseCoreInternal
@@ -124,6 +148,10 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/advertising_id/ios"
   amplitude_flutter:
     :path: ".symlinks/plugins/amplitude_flutter/ios"
+  appsflyer_sdk:
+    :path: ".symlinks/plugins/appsflyer_sdk/ios"
+  facebook_app_events:
+    :path: ".symlinks/plugins/facebook_app_events/ios"
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
   firebase_messaging:
@@ -148,6 +176,13 @@ SPEC CHECKSUMS:
   Amplitude: 184def4f87aa26f94a93a7faa334e06b1cae704d
   amplitude_flutter: 5a38ad50bf208d09d226787239e66a1e3246d974
   AnalyticsConnector: a53214d38ae22734c6266106c0492b37832633a9
+  appsflyer_sdk: 0132c7cd33db42ce3daf878f02809a9f88756f9f
+  AppsFlyerFramework: ad7ff0d22aa36c7f8cc4f71a5424e19b89ccb8ae
+  facebook_app_events: d791f99d78f74cde976edd378678566cb7bb4ab0
+  FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
+  FBAudienceNetwork: d1670939884e3a2e0ad98dca98d7e0c841417228
+  FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41
+  FBSDKCoreKit_Basics: 151b43db8b834d3f0e02f95d36a44ffd36265e45
   Firebase: a64bf6a8546e6eab54f1c715cd6151f39d2329f4
   firebase_core: aa979ae726f00b3ef4ccf59dfb96170af84efbd4
   firebase_messaging: 3af84b6a90aeac4d7a67fbf4c43a91e7083bea1f

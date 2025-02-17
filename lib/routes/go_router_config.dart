@@ -42,7 +42,7 @@ GoRouter buildGoRouter = GoRouter(
                 routes: [
                   GoRoute(
                     path: RouteValue.privacy.path,
-                    builder: (context, state) => PrivacyScreen(key: UniqueKey()),
+                    builder: (context, state) => PrivacyPolicyScreen(key: UniqueKey()),
                   ),
                 ]),
           ],
